@@ -2,6 +2,17 @@ TPC: vais colocar os textos, e as imagens; depois criar as seguintes pagina: cur
 são uteis. deixe apenas o header e o footer. criar tbm pra registro de aluno. Faça um branch novo, onde poderás fazer estas alterações. certo? percebido. farei tudo, so acho que terei dificuldades em um branch novo, yeah
 
 
+Voce nao incluiu o Menu naquele file cursos que eu Vie why?
+R: nao sei tambem pk. falhei. vou colocar
+
+Podes fazer isso agora, para faciltar a nevegação no site. Seja flexivel. Mãos a obra ESTA BEM. ATE JA.
+
+Ja esta.
+
+Yah... tou pensar no que vamos colocar depois do menu. 
+Deixe me ver aqui
+
+
 hei de verificar os meus branchs, criar um novo branch e depois mover de um branch pra outro
 
 meu branch é o main
@@ -26,7 +37,7 @@ mude pra o branch main
  git add . - adiciona todas as alterações(mas ainda nao estam prontas pra enviar para o repositorio/ ainda estao no local de trabolho/ working_directory)
  git commit -m "aqui vai os seu comentario, pra que voce saiba o  oque voce esta va a enviar" - este comando prepara as alterações pra serem enviadas ao repositorio
  git push - envia as alterações
- git push nome_do_branch - envia as alterações do branch especificado
+ git push nome_do_bgranch - envia as alterações do branch especificado
 
 acho que vao amentar mais dias porque ate agora nao avancaram novas datas, e possivel passar esa semana, ou ser sexta feira.
 e se consiguires retardar/ atrasar o dia da tua da defesa podemos obter um trabalho escelente.
@@ -36,3 +47,11 @@ use bem os comandos e siga os passos
 esta bem. im tired. let me sleep.
 
 Depois de terminar isso dou-lhe outras intruçoes. tchau hei de desligar o computador é todo seu
+
+
+por onde comecamos?? 
+i was aprecieting the pictures on gallerry, i think i can do this part, just explain why are they diffrent, and what type i have 
+to google for each folder. i can do tomorrow before we meet.
+
+
+are you here?
