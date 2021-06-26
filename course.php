@@ -46,7 +46,7 @@
         background-color: #3478b8;
         color: white;
         padding: 14px 20px;
-        margin: 8px 0;
+1        margin: 8px 0;
         border: none;
         cursor: pointer;
         width: 100%;
@@ -204,108 +204,200 @@ padding: 16px;
       </div>
     </div>
   </header>
-  <!--End header-->
-   <!-- Start menu -->
-   <section id="mu-menu">
-    <nav class="navbar navbar-default" role="navigation">  
-      <div class="container">
-        <div class="navbar-header">
-          <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <!-- LOGO -->              
-          <!-- TEXT BASED LOGO -->
-          <a class="navbar-brand" href="index.html"><span>Pente Mágico</span></a>
-          <!-- IMG BASED LOGO  -->
-          <!-- <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="logo"></a> -->
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
-            <li class="active"><a href="index.html">Home</a></li> 
-            <li><a href="course.html">Cursos</a></li>            
-            <li><a href="gallery.html">Galeria</a></li>
-            <li><a href="contact.html">Contactos</a></li>             
-            <li><a href="#" id="mu-search-icon"><i class="fa fa-search"></i></a></li>
-          </ul>                     
-        </div><!--/.nav-collapse -->        
-      </div>     
-    </nav>
-  </section>
-  <!-- End menu -->
-  <!-- Start search box --> 
-  <div id="mu-search">
-    <div class="mu-search-area">      
-      <button class="mu-search-close"><span class="fa fa-close"></span></button> 
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">            
-            <form class="mu-search-form">
-              <input type="search" placeholder="Type Your Keyword(s) & Hit Enter">              
-            </form>
-          </div>
+
+<!--End header-->
+ <!-- Start menu -->
+ <section id="mu-menu">
+  <nav class="navbar navbar-default" role="navigation">  
+    <div class="container">
+      <div class="navbar-header">
+        <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <!-- LOGO -->              
+        <!-- TEXT BASED LOGO -->
+        <a class="navbar-brand" href="index.php"><span>Pente Mágico</span></a>
+        <!-- IMG BASED LOGO  -->
+        <!-- <a class="navbar-brand" href="index.php"><img src="assets/img/logo.png" alt="logo"></a> -->
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
+          <li class="active"><a href="index.php">Home</a></li> 
+          <li><a href="course.php">Cursos</a></li>            
+          <li><a href="gallery.php">Galeria</a></li>
+          <li><a href="contact.php">Contactos</a></li>             
+          <li><a href="#" id="mu-search-icon"><i class="fa fa-search"></i></a></li>
+        </ul>                     
+      </div><!--/.nav-collapse -->        
+    </div>     
+  </nav>
+</section>
+<!-- End menu -->
+<!-- Start search box --> 
+<div id="mu-search">
+  <div class="mu-search-area">      
+    <button class="mu-search-close"><span class="fa fa-close"></span></button> 
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">            
+          <form class="mu-search-form">
+            <input type="search" placeholder="Type Your Keyword(s) & Hit Enter">              
+          </form>
         </div>
       </div>
     </div>
   </div>
+</div>
 
 
-  <!-- End search box -->s
-  <!--formulario-->
+<!-- End search box -->
 
-  <style type="text/css">
-	.bar{
-		width: 300px;
-		height: 400px;
-			background-color: #aaa;
-			background-image: url(Imagens/);
-
-			font-size: 20px;
-			margin-left: 40%;
-			margin-top: 15%;
-			border-radius: 40px 0px;
-			text-align: center;
-			padding: 10px;
-			display: 5s;
-	}
-
-	header{
-		color: white;
-		font-size:  30px;
-		text-align: center;
-		padding: 10px;
-		background-color:#e594f5 ;
-	}
-
-input{
-	height: 30px;
-	width: 200px;
-}
-
-</style>
-
-<body style="background-color: #e594f5;">
-
-
-
-<header>Registo</header>
-<form method="POST" action="processa.php">
-
-
-    Nome completo:<br>
-	<input type="text" name="nome_cliente" placeholder="Digite o teu nome "><br>
-	Morada:<br>
-	<input type="text" name="localizacao" placeholder="Digite a teu endereco "><br>
-	Nome do curso:<br>
-	<input type="text" name="nome_produto" placeholder="Digite o curso"><br>
-	Contacto:<br>
-	<input type="text" name="quantidade" placeholder="Digite o seu contacto"><br>
-	<input type="submit" name="send" value="Submeter o Pedido">
-
-</form>
+<!-- Start course section -->
+<section id="mu-latest-courses">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-md-12">
+        <div class="mu-latest-courses-area">
+          <!-- Start Title -->
+          <div class="mu-title">
+            <h2>Nossos Cursos</h2>
+            <p>Temos os melhores cursos na area de Beleza e Estetica:</p>
+          </div>
+          <!-- End Title -->
+          
+          <!-- Start latest course content -->
+          <div id="mu-latest-course-slide" class="mu-latest-courses-content">
+            <div class="col-lg-4 col-md-4 col-xs-12">
+              <div class="mu-latest-course-single">
+                <figure class="mu-latest-course-img">
+                  <a href="#"><img src="assets/img/courses/1.jpg" alt="img"></a>
+                  <figcaption class="mu-latest-course-imgcaption">
+                    <a href="#">Curso de Penteados</a>
+                    <span><i class="fa fa-clock-o"></i>90Dias</span>
+                  </figcaption>
+                </figure>
+                <div class="mu-latest-course-single-content">
+                  <h4><a href="#">Curso de Penteados</a></h4>
+                  <p>Neste curso, voce ira aprender tecnicas para fazer penteados, desde os casuais ate
+                     aos cerimoniais com destaque para Noivas.</p>
+                  <div class="mu-latest-course-single-contbottom">
+                    <a class="mu-course-details" href="#">Detalhes</a>
+                    <span class="mu-course-price" href="#">MZN 10.000</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-12">
+              <div class="mu-latest-course-single">
+                <figure class="mu-latest-course-img">
+                  <a href="#"><img src="assets/img/courses/2.jpg" alt="img"></a>
+                  <figcaption class="mu-latest-course-imgcaption">
+                    <a href="#">Curso de Maquilhagem</a>
+                    <span><i class="fa fa-clock-o"></i>75Dias</span>
+                  </figcaption>
+                </figure>
+                <div class="mu-latest-course-single-content">
+                  <h4><a href="#">Curso de Maquilhagem</a></h4>
+                  <p>Este curso e direcionado a quem queira ser Artista de make up, ensinamos desde a maquilhagem basica ate para eventos...</p>
+                  <div class="mu-latest-course-single-contbottom">
+                    <a class="mu-course-details" href="#">Detalhes</a>
+                    <span class="mu-course-price" href="#">MZN 5000</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-12">
+              <div class="mu-latest-course-single">
+                <figure class="mu-latest-course-img">
+                  <a href="#"><img src="assets/img/courses/3.jpg" alt="img"></a>
+                  <figcaption class="mu-latest-course-imgcaption">
+                    <a href="#">Curso de Tratamento Facial</a>
+                    <span><i class="fa fa-clock-o"></i>45Dias</span>
+                  </figcaption>
+                </figure>
+                <div class="mu-latest-course-single-content">
+                  <h4><a href="#">Curso de Tratamento Facial</a></h4>
+                  <p>No curso e Tratamento Facial, voce vai conhecer a seu tipo de pele, bem como conhecer os cuidados a
+                     ter</p>
+                  <div class="mu-latest-course-single-contbottom">
+                    <a class="mu-course-details" href="#">Detalhes</a>
+                    <span class="mu-course-price" href="#">MZN 2000</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-12">
+              <div class="mu-latest-course-single">
+                <figure class="mu-latest-course-img">
+                  <a href="#"><img src="assets/img/courses/4.jpg" alt="img"></a>
+                  <figcaption class="mu-latest-course-imgcaption">
+                    <a href="#">Curso de Manicure e pedicure</a>
+                    <span><i class="fa fa-clock-o"></i>3 Semanas</span>
+                  </figcaption>
+                </figure>
+                <div class="mu-latest-course-single-content">
+                  <h4><a href="#">Curso de Manicure e pedicure</a></h4>
+                  <p>No curso de manicure e Pedicure voce aprendera a cuidar das maos e dos pes, colocar e fazer manutencao de unhas....
+                    nncvvc   bbjhvcjv vvhhdhd bhcvhhjc hvchcvvchvhc vvhd nnmfhhvbvfhv vhb hbhhhjjjjjjjsjhj
+                    fjjjjjjjjjjjjjjjjj.</p>
+                  <div class="mu-latest-course-single-contbottom">
+                    <a class="mu-course-details" href="#">Detalhes</a>
+                    <span class="mu-course-price" href="#">MZN 5000</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-12">
+              <div class="mu-latest-course-single">
+                <figure class="mu-latest-course-img">
+                  <a href="#"><img src="assets/img/courses/5.jpg" alt="img"></a>
+                  <figcaption class="mu-latest-course-imgcaption">
+                    <a href="#">Curso de Dreadlocks</a>
+                    <span><i class="fa fa-clock-o"></i>75Dias</span>
+                  </figcaption>
+                </figure>
+                <div class="mu-latest-course-single-content">
+                  <h4><a href="#">Curso de Dreadlocks</a></h4>
+                  <p>Aqui voce vai aprender a iniciar dreads, com gel bem como com croche, </p>
+                  <div class="mu-latest-course-single-contbottom">
+                    <a class="mu-course-details" href="#">Detalhes</a>
+                    <span class="mu-course-price" href="#">MZN 4000</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-12">
+              <div class="mu-latest-course-single">
+                <figure class="mu-latest-course-img">
+                  <a href="#"><img src="assets/img/courses/6.jpg" alt="img"></a>
+                  <figcaption class="mu-latest-course-imgcaption">
+                    <a href="#">Trancas</a>
+                    <span><i class="fa fa-clock-o"></i>45Dias</span>
+                  </figcaption>
+                </figure>
+                <div class="mu-latest-course-single-content">
+                  <h4><a href="#">Trancas</a></h4>
+                  <p>Neste curso voce vai aprender a fazer diversas trancas, com cabelo e meixas.......
+                    khhgffffffffff jjkkukhj.</p>
+                  <div class="mu-latest-course-single-contbottom">
+                    <a class="mu-course-details" href="#">Detalhes</a>
+                    <span class="mu-course-price" href="#">MZN 5000</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End latest course content -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End latest course section -->
 
    <!-- Start footer -->
    <footer id="mu-footer">

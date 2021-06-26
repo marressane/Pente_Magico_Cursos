@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE php>
+<php lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -204,8 +204,7 @@ padding: 16px;
       </div>
     </div>
   </header>
-
-  <!-- header -->
+  <!--End header-->
    <!-- Start menu -->
    <section id="mu-menu">
     <nav class="navbar navbar-default" role="navigation">  
@@ -220,16 +219,16 @@ padding: 16px;
           </button>
           <!-- LOGO -->              
           <!-- TEXT BASED LOGO -->
-          <a class="navbar-brand" href="index.html"><span>Pente Mágico</span></a>
+          <a class="navbar-brand" href="index.php"><span>Pente Mágico</span></a>
           <!-- IMG BASED LOGO  -->
-          <!-- <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="logo"></a> -->
+          <!-- <a class="navbar-brand" href="index.php"><img src="assets/img/logo.png" alt="logo"></a> -->
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
-            <li class="active"><a href="index.html">Home</a></li> 
-            <li><a href="course.html">Cursos</a></li>            
-            <li><a href="gallery.html">Galeria</a></li>
-            <li><a href="contact.html">Contactos</a></li>             
+            <li class="active"><a href="index.php">Home</a></li> 
+            <li><a href="course.php">Cursos</a></li>            
+            <li><a href="gallery.php">Galeria</a></li>
+            <li><a href="contact.php">Contactos</a></li>             
             <li><a href="#" id="mu-search-icon"><i class="fa fa-search"></i></a></li>
           </ul>                     
         </div><!--/.nav-collapse -->        
@@ -252,10 +251,7 @@ padding: 16px;
       </div>
     </div>
   </div>
-
-
-  <!-- End search box -->
-
+   <!-- End search box -->
   
   <!-- Start BreadCrumb -->
   
@@ -265,10 +261,10 @@ padding: 16px;
           <div class=" row">
          <div class="col-md-12">
 
-               <div class="mu-page-breadcrumb-area"><h2>Contactos</h2>
+               <div class="mu-page-breadcrumb-area"><h2>Trabalho dos nossos alunos</h2>
                <ol class="breadcrumb">
 
-                <li> <a href="index.html">Home</a></li>
+                <li> <a href="index.php">Home</a></li>
                 <li class="active"><a href="">Contacto</a></li> 
                </ol>
       </div>
@@ -280,85 +276,81 @@ padding: 16px;
       
   <!-- Close  BreadCrumb --> 
 
-  <!-- Start Contact -->
-<section id="mu-contact">
-  <div class=" container">
-     <div class="row">
-        <div class="col-md-12">
-          <div class="mu-contact-area">
+  <!-- start gallerry pictures-->
+  
+  <!-- <a href="#"><img src="assets/img/gallery/big/1.jpg" alt="img"></a>
+  <a href="#"><img src="assets/img/gallery/big/2.jpg" alt="img"></a>
+  <a href="#"><img src="assets/img/gallery/small/1.jpg" alt="img"></a> -->
+
+  <section id="mu-gallery">
+    <div class="container">
+
+          <div class="col-md-12">
+
 
                 <div class=" mu-title">
-                    <h2>Entre em contacto</h2>
-                  <p>  Não exite, pode entrar em contacto para informações e esclarecimento</p>
-                   </div>
+                  <h2>Galeria</h2>
+                <p>Aprecie aqui alguns trabalhos feitos por nossa equipe de formador e nossos formandos</p>
+                </div>
 
-                   <!-- Contact Form -->
-                   <div class="mu-contact-content">           
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="mu-contact-left">
-
-                              <form class="contactform" method="POST" action="">
-
-                              <p>
-                                <label for="">Nome completo <span class="required">*</span></label> 
-                                <input type="text" name="nome" placeholder="type your name "><br>
-                              </p>
-                              
-                              <p> 
-                                <label for="">Email <span class="required">*</span></label> 
-                                <input type="text" name="email" placeholder="type your email ">
-                                      </p>
-
-                                <p>
-                                  <label for=""> Telefone</label>
-                                  <input type="text" name="telefone" placeholder="type your number">
-                                </p>
-
-                                <p>
-                                  <label for="">Assunto<span class="required">*</span></label> 
-                                  <input type="text" name="assunto" placeholder="assunto"><br>
-                                </p>
+                <div class="mu-gallery-content">
+                <!-- Star gallerry Menu -->
+                      <div class="mu-gallery-top"> 
+                         <ul>
+                            <li class="filter active" data-filter="all">Todas</li>
+                            <li class="filter" data-filter="maquilhagem">Maquilhagem</li>
+                            <li class="filter" data-filter="penteados">Penteados</li>
+                            <li  class="filter" data-filter="dreadlocks">Dreadlocks</li>
+                            <li class="filter" data-filter="tratamento">Tratamento Facial</li>
+                            <li class="filter" data-filter="mani-pedi">Manicure & pedicure</li>
+                            <li class="filter" data-filter="trancas-afro">Trancas Africanas</li>
+                          </ul>
+                      </div>
+                <!-- End gallerry Menu -->
+                      
+                    <div class="mu-gallery-body">
+                    
+                    <ul class="row" id="mixit-container">
+                           <!-- star gallery img -->
+                        <li class="col-md-4 col-sm-6 col-xs-12 mix lab">
+                          <div class=mu-single-gallery>
+                                <div class="mu-single-gallery-item">
+                                      <div class="mu-single-gallery-img">
+                                            <a href="#"><img src="assets/img/gallery/small/1-teste.jpg" alt=""> </a>
+                                      </div>
                                 
-                              <p class="comment-form-comment">
-                             
-                                      <label for="comment">Mensagem </label> 
-                                      <textarea name="comment" id="" aria-required="true"  rows="8" cols="45"></textarea> 
-                                    </p>
-                  
-                         
+                                      <div class="mu-gallery-info">
+                                          <div class="mu-single-gallery-info-inner">
+                                            <h3>Titulo</h3>
+                                              <p>Descricao</p>
+                                                  <a href="assets/img/gallery/big/1-teste.jpg" data-fancy-group="gallery" class="fancybox"><span class="fa-fa-eye"></span></a>
+                                                  <a href="#" class="aa-link"><span class="fa-fa-link"></span></a>
+                                          </div>
+                                      </div>       
+                                  </div>
+                           </div>       
+                        </li>
+                        
+                     </ul>
+                    
+                    </div>
+             </div>
 
-                           <p class="form-submit">  
-                             <input type="submit" name="send" value="Enviar" class="mu-pot-btn">
-                            </p>
-
-                          </form>
-
-                        </div>
-                        </div>
-
-
-                         <!-- google maps  -->
-                   
-                      <div class="col-md-6">
-                          <div class="mu-contact-right">
-
-                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3587.209650274916!2d32.581096014679545!3d-25.961163760440684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ee69baab0de35c5%3A0x93f3ded6670d56a3!2sMercado%20Janete!5e0!3m2!1spt-BR!2smz!4v1624047381411!5m2!1spt-BR!2smz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>1111111111
-
-                          </div>
-                       </div> 
-                   <!-- Contact Form -->
-
-          </div>
-        </div>
-     </div>
-  </div>
-</section>
+            </div>
+         </div>
+   
+    </div>
+  </section>
+ <!-- End gallerry pictures -->
 
 
-  <!-- End  Contact -->
+
+
+
+
 
  
+
    <!-- Start footer -->
    <footer id="mu-footer">
     <!-- start footer top -->
@@ -492,4 +484,4 @@ padding: 16px;
   <script src="assets/js/custom.js"></script> 
 
   </body>
-</html>
+</php>

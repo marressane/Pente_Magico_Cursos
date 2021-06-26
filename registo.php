@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE php>
+<php lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -219,16 +219,16 @@ padding: 16px;
           </button>
           <!-- LOGO -->              
           <!-- TEXT BASED LOGO -->
-          <a class="navbar-brand" href="index.html"><span>Pente Mágico</span></a>
+          <a class="navbar-brand" href="index.php"><span>Pente Mágico</span></a>
           <!-- IMG BASED LOGO  -->
-          <!-- <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="logo"></a> -->
+          <!-- <a class="navbar-brand" href="index.php"><img src="assets/img/logo.png" alt="logo"></a> -->
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
-            <li class="active"><a href="index.html">Home</a></li> 
-            <li><a href="course.html">Cursos</a></li>            
-            <li><a href="gallery.html">Galeria</a></li>
-            <li><a href="contact.html">Contactos</a></li>             
+            <li class="active"><a href="index.php">Home</a></li> 
+            <li><a href="course.php">Cursos</a></li>            
+            <li><a href="gallery.php">Galeria</a></li>
+            <li><a href="contact.php">Contactos</a></li>             
             <li><a href="#" id="mu-search-icon"><i class="fa fa-search"></i></a></li>
           </ul>                     
         </div><!--/.nav-collapse -->        
@@ -251,92 +251,61 @@ padding: 16px;
       </div>
     </div>
   </div>
-   <!-- End search box -->
-  
-  <!-- Start BreadCrumb -->
-  
-   
-    <section id="mu-page-breadcrumb"> 
-      <div class="container">
-          <div class=" row">
-         <div class="col-md-12">
-
-               <div class="mu-page-breadcrumb-area"><h2>Trabalho dos nossos alunos</h2>
-               <ol class="breadcrumb">
-
-                <li> <a href="index.html">Home</a></li>
-                <li class="active"><a href="">Contacto</a></li> 
-               </ol>
-      </div>
-          </div>
-      </div>
-      </div>
-    </section> 
-  
-      
-  <!-- Close  BreadCrumb --> 
-
-  <!-- start gallerry pictures-->
-  
-  <!-- <a href="#"><img src="assets/img/gallery/big/1.jpg" alt="img"></a>
-  <a href="#"><img src="assets/img/gallery/big/2.jpg" alt="img"></a>
-  <a href="#"><img src="assets/img/gallery/small/1.jpg" alt="img"></a> -->
-
-  <section id="mu-gallery">
-    <div class="container">
-
-          <div class="col-md-12">
 
 
-                <div class=" mu-title">
-                  <h2>Galeria</h2>
-                <p>Aprecie aqui alguns trabalhos feitos por nossa equipe de formador e nossos formandos</p>
-                </div>
+  <!-- End search box -->s
+  <!--formulario-->
 
-                <div class="mu-gallery-content">
+  <style type="text/css">
+	.bar{
+		width: 300px;
+		height: 400px;
+			background-color: #aaa;
+			background-image: url(Imagens/);
 
-                      <div>
-                         <ul>
-                            <li>Todas</li>
-                            <li>Maquilhagem</li>
-                            <li>Penteados</li>
-                            <li>Dreadlocks</li>
-                            <li>Tratamento Facial</li>
-                            <li>Manicure & pedicure</li>
-                            <li>Trancas Africanas</li>
-                          </ul>
-                      </div>
+			font-size: 20px;
+			margin-left: 40%;
+			margin-top: 15%;
+			border-radius: 40px 0px;
+			text-align: center;
+			padding: 10px;
+			display: 5s;
+	}
 
-                      <div>
-                        <ul>
+	header{
+		color: white;
+		font-size:  30px;
+		text-align: center;
+		padding: 10px;
+		background-color:#e594f5 ;
+	}
 
-                          <li> <img src="assets/img/gallery/small/1.jpg" alt=""></li>
-                         
+input{
+	height: 30px;
+	width: 200px;
+}
+
+</style>
+
+<body style="background-color: #e594f5;">
 
 
 
-                        </ul>
+<header>Registo</header>
+<form method="POST" action="processa.php">
 
 
-                      </div>
+    Nome completo:<br>
+	<input type="text" name="nome_cliente" placeholder="Digite o teu nome "><br>
+	Morada:<br>
+	<input type="text" name="localizacao" placeholder="Digite a teu endereco "><br>
+	Nome do curso:<br>
+	<input type="text" name="nome_produto" placeholder="Digite o curso"><br>
+	Contacto:<br>
+	<input type="text" name="quantidade" placeholder="Digite o seu contacto"><br>
+	<input type="submit" name="send" value="Submeter o Pedido">
 
-                
-                      
-                </div>
-
-          </div>
-   
-    </div>
-  </section>
- <!-- End gallerry pictures -->
-
-
-
-
-
-
-
- 
+</form>
 
    <!-- Start footer -->
    <footer id="mu-footer">
@@ -471,4 +440,4 @@ padding: 16px;
   <script src="assets/js/custom.js"></script> 
 
   </body>
-</html>
+</php>
