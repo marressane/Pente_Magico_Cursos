@@ -1,5 +1,5 @@
-<!DOCTYPE php>
-<php lang="en">
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,7 +18,7 @@
     <!-- Fancybox slider -->
     <link rel="stylesheet" href="assets/css/jquery.fancybox.css" type="text/css" media="screen" /> 
     <!-- Theme color -->
-    <link id="switcher" href="assets/css/theme-color/default-theme.css" rel="stylesheet">          
+    <link id="switcher" href="assets/css/theme-color/default-theme.css" rel="stylesheet">    
 
     <!-- Main style sheet -->
     <link href="assets/css/style.css" rel="stylesheet">    
@@ -28,137 +28,17 @@
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,300,300italic,500,700' rel='stylesheet' type='text/css'>
     
-    <style>
-      body {font-family: Arial, Helvetica, sans-serif;}
-      
-      /* Full-width input fields */
-      input[type=text], input[type=password] {
-        width: 100%;
-        padding: 12px 20px;
-        margin: 8px 0;
-        display: inline-block;
-        border: 1px solid #ccc;
-        box-sizing: border-box;
-      }
-      
-      /* Set a style for all buttons */
-      button {
-        background-color: #3478b8;
-        color: white;
-        padding: 14px 20px;
-        margin: 8px 0;
-        border: none;
-        cursor: pointer;
-        width: 100%;
-      }
-      
-      button:hover {
-        opacity: 0.8;
-      }
-      
-      /* Extra styles for the cancel button */
-      .cancelbtn {
-        width: auto;
-        padding: 10px 18px;
-        background-color: #f44336;
-      }
-      
-      /* Center the image and position the close button */
-      .imgcontainer {
-        text-align: center;
-        margin: 24px 0 12px 0;
-        position: relative;
-      }
-      
-      img.avatar {
-        width: 40%;
-        border-radius: 50%;
-      }
-      
-      .container {
-        padding: 16px;
-      }
-      .login-container{
-width: 100%;
-padding: 16px;
-      }
-      
-      span.psw {
-        float: right;
-        padding-top: 16px;
-      }
-      
-      /* The Modal (background) */
-      .modal {
-        display: none; /* Hidden by default */
-        position: fixed; /* Stay in place */
-        z-index: 1; /* Sit on top */
-        left: 0;
-        top: 0;
-        width: 100%; /* Full width */
-        height: 100%; /* Full height */
-        overflow: auto; /* Enable scroll if needed */
-        background-color: rgb(0,0,0); /* Fallback color */
-        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-        padding-top: 60px;
-      }
-      
-      /* Modal Content/Box */
-      .modal-content {
-        background-color: #fefefe;
-        margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-        border: 1px solid #888;
-        width: 80%; /* Could be more or less, depending on screen size */
-      }
-      
-      /* The Close Button (x) */
-      .close {
-        position: absolute;
-        right: 25px;
-        top: 0;
-        color: #000;
-        font-size: 35px;
-        font-weight: bold;
-      }
-      
-      .close:hover,
-      .close:focus {
-        color: rgb(36, 123, 194);
-        cursor: pointer;
-      }
-      
-      /* Add Zoom Animation */
-      .animate {
-        -webkit-animation: animatezoom 0.6s;
-        animation: animatezoom 0.6s
-      }
-      
-      @-webkit-keyframes animatezoom {
-        from {-webkit-transform: scale(0)} 
-        to {-webkit-transform: scale(1)}
-      }
-        
-      @keyframes animatezoom {
-        from {transform: scale(0)} 
-        to {transform: scale(1)}
-      }
-      
-      /* Change styles for span and cancel button on extra small screens */
-      @media screen and (max-width: 300px) {
-        span.psw {
-           display: block;
-           float: none;
-        }
-        .cancelbtn {
-           width: 100%;
-        }
-      }
-      </style>
-    
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
   </head>
-  <body> 
-
+  <body>
+  
   <!--START SCROLL TOP BUTTON -->
     <a class="scrollToTop" href="#">
       <i class="fa fa-angle-up"></i>      
@@ -189,7 +69,8 @@ padding: 16px;
                   <nav>
                     <ul class="mu-top-social-nav">
                       <li><a href="#"><span class="fa fa-facebook"></span></a></li>
-                      <li><a href="#"><span class="fa fa-whatsapp"></span></a></li>
+                      <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                      
                       <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
                       <li><a href="#"><span class="fa fa-youtube"></span></a></li>
                       <li onclick="document.getElementById('id01').style.display='block'" ><a href="#"><span  style="width: 60px;" class="fa fa-user"></span> Login</a></li>
@@ -204,10 +85,9 @@ padding: 16px;
       </div>
     </div>
   </header>
-
-  <!-- header -->
-   <!-- Start menu -->
-   <section id="mu-menu">
+  <!-- End header  -->
+  <!-- Start menu -->
+  <section id="mu-menu">
     <nav class="navbar navbar-default" role="navigation">  
       <div class="container">
         <div class="navbar-header">
@@ -222,145 +102,113 @@ padding: 16px;
           <!-- TEXT BASED LOGO -->
           <a class="navbar-brand" href="index.php"><span>Pente Mágico</span></a>
           <!-- IMG BASED LOGO  -->
-          <!-- <a class="navbar-brand" href="index.php"><img src="assets/img/logo.png" alt="logo"></a> -->
+          <!-- <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="logo"></a> -->
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
-            <li class="active"><a href="index.php">Home</a></li> 
-            <li><a href="course.php">Cursos</a></li>            
-            <li><a href="gallery.php">Galeria</a></li>
-            <li><a href="contact.php">Contactos</a></li>             
-            <li><a href="#" id="mu-search-icon"><i class="fa fa-search"></i></a></li>
-          </ul>                     
+          <li class="active"><a href="index.php">Home</a></li> 
+          <li><a href="course.php">Cursos</a></li>            
+          <li><a href="gallery.php">Galeria</a></li>
+          <li><a href="contact.php">Contactos</a></li>             
+          <li><a href="#" id="mu-search-icon"><i class="fa fa-search"></i></a></li>
+          </ul>                   
         </div><!--/.nav-collapse -->        
       </div>     
     </nav>
   </section>
   <!-- End menu -->
-  <!-- Start search box --> 
+  <!-- Start search box -->
   <div id="mu-search">
     <div class="mu-search-area">      
-      <button class="mu-search-close"><span class="fa fa-close"></span></button> 
+      <button class="mu-search-close"><span class="fa fa-close"></span></button>
       <div class="container">
         <div class="row">
           <div class="col-md-12">            
             <form class="mu-search-form">
-              <input type="search" placeholder="Type Your Keyword(s) & Hit Enter">              
+             <input type="search" placeholder="Type Your Keyword(s) & Hit Enter">
             </form>
           </div>
         </div>
       </div>
     </div>
   </div>
-
-
   <!-- End search box -->
-
-  
-  <!-- Start BreadCrumb -->
-  
-   
-    <section id="mu-page-breadcrumb"> 
-      <div class="container">
-          <div class=" row">
-         <div class="col-md-12">
-
-               <div class="mu-page-breadcrumb-area"><h2>Contactos</h2>
-               <ol class="breadcrumb">
-
-                <li> <a href="index.php">Home</a></li>
-                <li class="active"><a href="">Contacto</a></li> 
-               </ol>
-      </div>
-          </div>
-      </div>
-      </div>
-    </section> 
-  
-      
-  <!-- Close  BreadCrumb --> 
-
-  <!-- Start Contact -->
-<section id="mu-contact">
-  <div class=" container">
+ <!-- Page breadcrumb -->
+ <section id="mu-page-breadcrumb">
+   <div class="container">
      <div class="row">
-        <div class="col-md-12">
-          <div class="mu-contact-area">
-
-                <div class=" mu-title">
-                    <h2>Entre em contacto</h2>
-                  <p>  Não exite, pode entrar em contacto para informações e esclarecimento</p>
-                   </div>
-
-                   <!-- Contact Form -->
-                   <div class="mu-contact-content">           
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="mu-contact-left">
-
-                              <form class="contactform" method="POST" action="">
-
-                              <p>
-                                <label for="">Nome completo <span class="required">*</span></label> 
-                                <input type="text" name="nome" placeholder="type your name "><br>
-                              </p>
-                              
-                              <p> 
-                                <label for="">Email <span class="required">*</span></label> 
-                                <input type="text" name="email" placeholder="type your email ">
-                                      </p>
-
-                                <p>
-                                  <label for=""> Telefone</label>
-                                  <input type="text" name="telefone" placeholder="type your number">
-                                </p>
-
-                                <p>
-                                  <label for="">Assunto<span class="required">*</span></label> 
-                                  <input type="text" name="assunto" placeholder="assunto"><br>
-                                </p>
-                                
-                              <p class="comment-form-comment">
-                             
-                                      <label for="comment">Mensagem </label> 
-                                      <textarea name="comment" id="" aria-required="true"  rows="8" cols="45"></textarea> 
-                                    </p>
-                  
-                         
-
-                           <p class="form-submit">  
-                             <input type="submit" name="send" value="Enviar" class="mu-pot-btn">
-                            </p>
-
-                          </form>
-
-                        </div>
-                        </div>
-
-
-                         <!-- google maps  -->
-                   
-                      <div class="col-md-6">
-                          <div class="mu-contact-right">
-
-                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3587.209650274916!2d32.581096014679545!3d-25.961163760440684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ee69baab0de35c5%3A0x93f3ded6670d56a3!2sMercado%20Janete!5e0!3m2!1spt-BR!2smz!4v1624047381411!5m2!1spt-BR!2smz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>1111111111
-
-                          </div>
-                       </div> 
-                   <!-- Contact Form -->
-
-          </div>
-        </div>
+       <div class="col-md-12">
+         <div class="mu-page-breadcrumb-area">
+         <h2>Contactos</h2>
+           <ol class="breadcrumb">
+           <li> <a href="index.php">Home</a></li>
+                <li class="active"><a href="">Contacto</a></li>
+          </ol>
+         </div>
+       </div>
      </div>
-  </div>
-</section>
+   </div>
+ </section>
+ <!-- End breadcrumb -->
 
-
-  <!-- End  Contact -->
-
+ <!-- Start contact  -->
+ <section id="mu-contact">
+   <div class="container">
+     <div class="row">
+       <div class="col-md-12">
+         <div class="mu-contact-area">
+          <!-- start title -->
+          <div class="mu-title">
+          <h2>Entre em contacto</h2>
+                  <p>  Não exite, pode entrar em contacto para informações e esclarecimento</p>
+          </div>
+          <!-- end title -->
+          <!-- start contact content -->
+          <div class="mu-contact-content">           
+            <div class="row">
+              <div class="col-md-6">
+                <div class="mu-contact-left">
+                  <form class="contactform">                  
+                    <p class="comment-form-author">
+                    <label for="">Nome completo <span class="required">*</span></label> 
+                     <input type="text" name="nome" placeholder="Digite seu nome "><br>
+                    </p>
+                    <p class="comment-form-email">
+                    <label for="">Email <span class="required">*</span></label> 
+                                <input type="text" name="email" placeholder="Digite o seu email(ex: seuemail@email.com)">
+                    </p>
+                    <p class="comment-form-url">
+                      <label for="subject">Assunto</label>
+                      <input type="text" name="subject">  
+                    </p>
+                    <p class="comment-form-comment">
+                      <label for="comment">Mensagem</label>
+                      <textarea required="required" aria-required="true" rows="8" cols="45" name="comment"></textarea>
+                    </p>                
+                    <p class="form-submit">
+                      <input type="submit" value="Send Message" class="mu-post-btn" name="submit">
+                    </p>        
+                  </form>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="mu-contact-right">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3587.209650274916!2d32.581096014679545!3d-25.961163760440684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ee69baab0de35c5%3A0x93f3ded6670d56a3!2sMercado%20Janete!5e0!3m2!1spt-BR!2smz!4v1624047381411!5m2!1spt-BR!2smz" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end contact content -->
+         </div>
+       </div>
+     </div>
+   </div>
+ </section>
+ <!-- End contact  -->
  
-   <!-- Start footer -->
-   <footer id="mu-footer">
+
+  <!-- Start footer -->
+  <footer id="mu-footer">
     <!-- start footer top -->
     <div class="mu-footer-top">
       <div class="container">
@@ -368,7 +216,7 @@ padding: 16px;
           <div class="row">
             <div class="col-lg-3 col-md-3 col-sm-3">
               <div class="mu-footer-widget">
-                <h4>Links</h4>
+              <h4>Links</h4>
                 <ul>
                   <li><a href="">Minha Conta</a></li>
                   <li><a href="#">Sobre</a></li>
@@ -380,7 +228,7 @@ padding: 16px;
             </div>
             <div class="col-lg-3 col-md-3 col-sm-3">
               <div class="mu-footer-widget">
-                <h4>Cursos</h4>
+              <h4>Cursos</h4>
                 <ul>
                   <li><a href="#">Curso 1</a></li>
                   <li><a href="">Curso 1</a></li>
@@ -392,7 +240,7 @@ padding: 16px;
             </div>
             <div class="col-lg-3 col-md-3 col-sm-3">
               <div class="mu-footer-widget">
-                <h4>News letter</h4>
+              <h4>News letter</h4>
                 <p>Subscreva-te e fique a par da novidade e ofertas</p>
                 <form class="mu-subscribe-form">
                   <input type="email" placeholder="Type your Email">
@@ -402,7 +250,7 @@ padding: 16px;
             </div>
             <div class="col-lg-3 col-md-3 col-sm-3">
               <div class="mu-footer-widget">
-                <h4>Contactos</h4>
+              <h4>Contactos</h4>
                 <address>
                   <p>Endereço:</p>
                   <p>Phone: (+258) 841068822 </p>
@@ -420,59 +268,19 @@ padding: 16px;
     <div class="mu-footer-bottom">
       <div class="container">
         <div class="mu-footer-bottom-area">
-          <p>&copy; All Right Reserved. Designed by <a href="http://www.pentemagico.co.mz/" rel="nofollow">Angela Maressane</a></p>
+          <p>&copy; All Right Reserved. Designed by <a href="http://www.markups.io/" rel="nofollow">MarkUps.io</a></p>
         </div>
       </div>
     </div>
     <!-- end footer bottom -->
   </footer>
   <!-- End footer -->
-  
-
-
-  <div id="id01" class="modal">
-  
-    <form class="modal-content animate" action="" method="post">
-      <div class="imgcontainer">
-        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-        <img src="" alt="Avatar" class="avatar">
-      </div>
-  
-      <div class="login-container">
-        <label for="uname"><b>Username</b></label>
-        <input type="text" placeholder="Enter Username" name="uname" required>
-  
-        <label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" required>
-          
-        <button type="submit">Login</button>
-        <label>
-          <input type="checkbox" checked="checked" name="remember"> Remember me
-        </label>
-      </div>
-  
-      <div class="login-container" style="background-color:#f1f1f1">
-        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-        <span class="psw">Forgot <a href="#">password?</a></span>
-      </div>
-    </form>
-  </div>
-  
-  <script>
-  // Get the modal
-  var modal = document.getElementById('id01');
-  
-  // When the user clicks anywhere outside of the modal, close it
-  window.onclick = function(event) {
-      if (event.target == modal) {
-          modal.style.display = "none";
-      }
-  }
-  </script>
 
 
 
 
+
+  
   <!-- jQuery library -->
   <script src="assets/js/jquery.min.js"></script>  
   <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -486,10 +294,9 @@ padding: 16px;
   <script type="text/javascript" src="assets/js/jquery.mixitup.js"></script>
   <!-- Add fancyBox -->        
   <script type="text/javascript" src="assets/js/jquery.fancybox.pack.js"></script>
-  
-  
+
   <!-- Custom js -->
   <script src="assets/js/custom.js"></script> 
 
   </body>
-</php>
+</html>

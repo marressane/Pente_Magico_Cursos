@@ -12,7 +12,7 @@
     <!-- Font awesome -->
     <link href="assets/css/font-awesome.css" rel="stylesheet">
     <!-- Bootstrap -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">   
+    <link href="assets/css/bootstrap.css" rel="stylesheet">  
     <!-- Slick slider -->
     <link rel="stylesheet" type="text/css" href="assets/css/slick.css">          
     <!-- Fancybox slider -->
@@ -28,13 +28,133 @@
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,300,300italic,500,700' rel='stylesheet' type='text/css'>
     
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <style>
+      body {font-family: Arial, Helvetica, sans-serif;}
+      
+      /* Full-width input fields */
+      input[type=text], input[type=password] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+      }
+      
+      /* Set a style for all buttons */
+      button {
+        background-color: #3478b8;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+      }
+      
+      button:hover {
+        opacity: 0.8;
+      }
+      
+      /* Extra styles for the cancel button */
+      .cancelbtn {
+        width: auto;
+        padding: 10px 18px;
+        background-color: #f44336;
+      }
+      
+      /* Center the image and position the close button */
+      .imgcontainer {
+        text-align: center;
+        margin: 24px 0 12px 0;
+        position: relative;
+      }
+      
+      img.avatar {
+        width: 40%;
+        border-radius: 50%;
+      }
+      
+      .container {
+        padding: 16px;
+      }
+      .login-container{
+width: 100%;
+padding: 16px;
+      }
+      
+      span.psw {
+        float: right;
+        padding-top: 16px;
+      }
+      
+      /* The Modal (background) */
+      .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        padding-top: 60px;
+      }
+      
+      /* Modal Content/Box */
+      .modal-content {
+        background-color: #fefefe;
+        margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+        border: 1px solid #888;
+        width: 80%; /* Could be more or less, depending on screen size */
+      }
+      
+      /* The Close Button (x) */
+      .close {
+        position: absolute;
+        right: 25px;
+        top: 0;
+        color: #000;
+        font-size: 35px;
+        font-weight: bold;
+      }
+      
+      .close:hover,
+      .close:focus {
+        color: rgb(36, 123, 194);
+        cursor: pointer;
+      }
+      
+      /* Add Zoom Animation */
+      .animate {
+        -webkit-animation: animatezoom 0.6s;
+        animation: animatezoom 0.6s
+      }
+      
+      @-webkit-keyframes animatezoom {
+        from {-webkit-transform: scale(0)} 
+        to {-webkit-transform: scale(1)}
+      }
+        
+      @keyframes animatezoom {
+        from {transform: scale(0)} 
+        to {transform: scale(1)}
+      }
+      
+      /* Change styles for span and cancel button on extra small screens */
+      @media screen and (max-width: 300px) {
+        span.psw {
+           display: block;
+           float: none;
+        }
+        .cancelbtn {
+           width: 100%;
+        }
+      }
+      </style>
+    
 
   </head>
   <body> 
@@ -69,8 +189,7 @@
                   <nav>
                     <ul class="mu-top-social-nav">
                       <li><a href="#"><span class="fa fa-facebook"></span></a></li>
-                      <li><a href="#"><span class="fa fa-twitter"></span></a></li>
-                     
+                      <li><a href="#"><span class="fa fa-whatsapp"></span></a></li>
                       <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
                       <li><a href="#"><span class="fa fa-youtube"></span></a></li>
                       <li onclick="document.getElementById('id01').style.display='block'" ><a href="#"><span  style="width: 60px;" class="fa fa-user"></span> Login</a></li>
@@ -86,6 +205,7 @@
     </div>
   </header>
   <!-- End header  -->
+  
   <!-- Start menu -->
   <section id="mu-menu">
     <nav class="navbar navbar-default" role="navigation">  
@@ -102,11 +222,11 @@
           <!-- TEXT BASED LOGO -->
           <a class="navbar-brand" href="index.php"><span>Pente Mágico</span></a>
           <!-- IMG BASED LOGO  -->
-          <!-- <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="logo"></a> -->
+          <!-- <a class="navbar-brand" href="index.php"><img src="assets/img/logo.png" alt="logo"></a> -->
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
-          <li class="active"><a href="index.php">Home</a></li> 
+            <li class="active"><a href="index.php">Home</a></li> 
             <li><a href="courses.php">Cursos</a></li>            
             <li><a href="gallery.php">Galeria</a></li>
             <li><a href="contact.php">Contactos</a></li>             
@@ -117,10 +237,10 @@
     </nav>
   </section>
   <!-- End menu -->
-  <!-- Start search box -->
+  <!-- Start search box --> 
   <div id="mu-search">
     <div class="mu-search-area">      
-      <button class="mu-search-close"><span class="fa fa-close"></span></button>
+      <button class="mu-search-close"><span class="fa fa-close"></span></button> 
       <div class="container">
         <div class="row">
           <div class="col-md-12">            
@@ -132,18 +252,21 @@
       </div>
     </div>
   </div>
+
+
   <!-- End search box -->
+ 
   <!-- Start Slider -->
   <section id="mu-slider">
     <!-- Start single slider item -->
     <div class="mu-slider-single">
       <div class="mu-slider-img">
         <figure>
-          <img src="assets/img/slider/1.jpg" alt="img">
+          <img src="assets/img/slider/1.jpg" alt="img"> 
         </figure>
       </div>
       <div class="mu-slider-content">
-      <h4>Bem Vindo ao Pente Mágico </h4>
+        <h4>Bem Vindo ao Pente Mágico </h4>
         <span></span>
         <h2>Sua escola de beleza</h2>
         <p>Aprender para Empreender...</p>
@@ -151,38 +274,40 @@
       </div>
     </div>
     <!-- Start single slider item -->
-    <!-- Start single slider item -->
-    <div class="mu-slider-single">
-      <div class="mu-slider-img">
-        <figure>
-          <img src="assets/img/slider/2.jpg" alt="img">
-        </figure>
-      </div>
-      <div class="mu-slider-content">
-        <h4>Inscreva-te e Reserva a tua vaga</h4>
-        <span></span>
-        <h2>Faça a Sua Incrição nos Nossos Cursos</h2>
+
+ <!-- Start single slider item -->
+ <div class="mu-slider-single">
+  <div class="mu-slider-img">
+    <figure>
+      <img src="assets/img/slider/3.jpg" alt="img">
+    </figure>
+  </div>
+  <div class="mu-slider-content">
+    <h4>Inscreva-te e Reserva a tua vaga</h4>
+    <span></span>
+    <h2>Faça a Sua Incrição nos Nossos Cursos</h2>
     <p>Garanta a sua vaga na melhor escola de Cabeleireiro em Moçambique</p>
-        <a href="#" class="mu-read-more-btn">Incrisver-se</a>
-      </div>
-    </div>
-    <!-- Start single slider item -->
+  </div>
+</div>
+<!-- Start single slider item -->
+
     <!-- Start single slider item -->
     <div class="mu-slider-single">
       <div class="mu-slider-img">
         <figure>
-          <img src="assets/img/slider/3.jpg" alt="img">
+          <img src="assets/img/slider/2.jpg" alt="img"> 
         </figure>
       </div>
       <div class="mu-slider-content">
-      <h4>Ganhe a sua Magia</h4>
+        <h4>Ganhe a sua Magia</h4>
         <span></span>
         <h2>Seja Mágico da Beleza Conosco</h2>
         <p>Venha aprender com os melhores, e torne-se um deles...</p> 
-    
+        
       </div>
     </div>
-    <!-- Start single slider item -->    
+    <!-- Start single slider item -->
+       
   </section>
   <!-- End Slider -->
   <!-- Start service  -->
@@ -230,16 +355,20 @@
                 <div class="mu-about-us-left">
                   <!-- Start Title -->
                   <div class="mu-title">
-                  <h2>Sobre Pente Mágico</h2>             
+                    <h2>Sobre Pente Mágico</h2>              
                   </div>
+                
                   <!-- End Title -->
                   <p> PENTE MAGICO e um centro de formacao em cabeleireiro, fundado em 2012, conta actualmente com mais de 100 profissionais formados, ja firmes no mercado e com um sucesso inquestionavel no mundo do glmour. </p>
                 <p> No inicio tinha apenas duas trabalhadodoras, actualmente conta com 10 trabalhadores altamente qualificados e preparados para exercer qualquer actividade no mundo da beleza e estetica. O nosso grupo alvo sao homens e mulheres, sobretudo raparigas na tenra idade, que tenham garra e vontade de aprender para empreender, criando deste modo oportunidades </p>
+                 
+                 
+                
                 </div>
               </div>
               <div class="col-lg-6 col-md-6">
                 <div class="mu-about-us-right">                            
-                <a id="mu-abtus-video" href="https:" target="mutube-video">
+                <a id="mu-abtus-video" href="https://www.youtube.com/watch?v=KvHt2HDGOrw" target="mutube-video"> 
                   <img src="assets/img/about-us.jpg" alt="img">
                 </a>                
                 </div>
@@ -252,9 +381,9 @@
   </section>
   <!-- End about us -->
 
-  
 
-  <!-- Start latest course section -->
+
+  <!-- Start course section -->
   <section id="mu-latest-courses">
     <div class="container">
       <div class="row">
@@ -262,7 +391,7 @@
           <div class="mu-latest-courses-area">
             <!-- Start Title -->
             <div class="mu-title">
-            <h2>Nossos Cursos</h2>
+              <h2>Nossos Cursos</h2>
               <p>Temos os melhores cursos na area de Beleza e Estetica:</p>
             </div>
             <!-- End Title -->
@@ -273,12 +402,12 @@
                   <figure class="mu-latest-course-img">
                     <a href="#"><img src="assets/img/courses/1.jpg" alt="img"></a>
                     <figcaption class="mu-latest-course-imgcaption">
-                    <a href="#">Curso de Penteados</a>
+                      <a href="#">Curso de Penteados</a>
                       <span><i class="fa fa-clock-o"></i>90Dias</span>
                     </figcaption>
                   </figure>
                   <div class="mu-latest-course-single-content">
-                  <h4><a href="#">Curso de Penteados</a></h4>
+                    <h4><a href="#">Curso de Penteados</a></h4>
                     <p>Neste curso, voce ira aprender tecnicas para fazer penteados, desde os casuais ate
                        aos cerimoniais com destaque para Noivas.</p>
                     <div class="mu-latest-course-single-contbottom">
@@ -293,12 +422,12 @@
                   <figure class="mu-latest-course-img">
                     <a href="#"><img src="assets/img/courses/2.jpg" alt="img"></a>
                     <figcaption class="mu-latest-course-imgcaption">
-                    <a href="#">Curso de Maquilhagem</a>
+                      <a href="#">Curso de Maquilhagem</a>
                       <span><i class="fa fa-clock-o"></i>75Dias</span>
                     </figcaption>
                   </figure>
                   <div class="mu-latest-course-single-content">
-                  <h4><a href="#">Curso de Maquilhagem</a></h4>
+                    <h4><a href="#">Curso de Maquilhagem</a></h4>
                     <p>Este curso e direcionado a quem queira ser Artista de make up, ensinamos desde a maquilhagem basica ate para eventos...</p>
                     <div class="mu-latest-course-single-contbottom">
                       <a class="mu-course-details" href="#">Detalhes</a>
@@ -312,12 +441,12 @@
                   <figure class="mu-latest-course-img">
                     <a href="#"><img src="assets/img/courses/3.jpg" alt="img"></a>
                     <figcaption class="mu-latest-course-imgcaption">
-                    <a href="#">Curso de Tratamento Facial</a>
-                      <span><i class="fa fa-clock-o"></i>45Dias</span>an>
+                      <a href="#">Curso de Tratamento Facial</a>
+                      <span><i class="fa fa-clock-o"></i>45Dias</span>
                     </figcaption>
                   </figure>
                   <div class="mu-latest-course-single-content">
-                  <h4><a href="#">Curso de Tratamento Facial</a></h4>
+                    <h4><a href="#">Curso de Tratamento Facial</a></h4>
                     <p>No curso e Tratamento Facial, voce vai conhecer a seu tipo de pele, bem como conhecer os cuidados a
                        ter</p>
                     <div class="mu-latest-course-single-contbottom">
@@ -330,14 +459,14 @@
               <div class="col-lg-4 col-md-4 col-xs-12">
                 <div class="mu-latest-course-single">
                   <figure class="mu-latest-course-img">
-                    <a href="#"><img src="assets/img/courses/1.jpg" alt="img"></a>
+                    <a href="#"><img src="assets/img/courses/4.jpg" alt="img"></a>
                     <figcaption class="mu-latest-course-imgcaption">
-                    <a href="#">Curso de Manicure e pedicure</a>
+                      <a href="#">Curso de Manicure e pedicure</a>
                       <span><i class="fa fa-clock-o"></i>3 Semanas</span>
                     </figcaption>
                   </figure>
                   <div class="mu-latest-course-single-content">
-                  <h4><a href="#">Curso de Manicure e pedicure</a></h4>
+                    <h4><a href="#">Curso de Manicure e pedicure</a></h4>
                     <p>No curso de manicure e Pedicure voce aprendera a cuidar das maos e dos pes, colocar e fazer manutencao de unhas.</p>
                     <div class="mu-latest-course-single-contbottom">
                       <a class="mu-course-details" href="#">Detalhes</a>
@@ -349,14 +478,14 @@
               <div class="col-lg-4 col-md-4 col-xs-12">
                 <div class="mu-latest-course-single">
                   <figure class="mu-latest-course-img">
-                    <a href="#"><img src="assets/img/courses/2.jpg" alt="img"></a>
+                    <a href="#"><img src="assets/img/courses/5.jpg" alt="img"></a>
                     <figcaption class="mu-latest-course-imgcaption">
-                    <a href="#">Curso de Dreadlocks</a>
+                      <a href="#">Curso de Dreadlocks</a>
                       <span><i class="fa fa-clock-o"></i>75Dias</span>
                     </figcaption>
                   </figure>
                   <div class="mu-latest-course-single-content">
-                  <h4><a href="#">Curso de Dreadlocks</a></h4>
+                    <h4><a href="#">Curso de Dreadlocks</a></h4>
                     <p>Aqui voce vai aprender a iniciar dreads, com gel bem como com croche, </p>
                     <div class="mu-latest-course-single-contbottom">
                       <a class="mu-course-details" href="#">Detalhes</a>
@@ -368,14 +497,14 @@
               <div class="col-lg-4 col-md-4 col-xs-12">
                 <div class="mu-latest-course-single">
                   <figure class="mu-latest-course-img">
-                    <a href="#"><img src="assets/img/courses/3.jpg" alt="img"></a>
+                    <a href="#"><img src="assets/img/courses/6.jpg" alt="img"></a>
                     <figcaption class="mu-latest-course-imgcaption">
-                    <a href="#">Trancas</a>
+                      <a href="#">Trancas</a>
                       <span><i class="fa fa-clock-o"></i>45Dias</span>
                     </figcaption>
                   </figure>
                   <div class="mu-latest-course-single-content">
-                  <h4><a href="#">Trancas</a></h4>
+                    <h4><a href="#">Trancas</a></h4>
                     <p>Neste curso voce vai aprender a fazer diversas trancas, com cabelo e meixas.</p>
                     <div class="mu-latest-course-single-contbottom">
                       <a class="mu-course-details" href="#">Detalhes</a>
@@ -394,7 +523,6 @@
   <!-- End latest course section -->
 
 
-
   <!-- Start footer -->
   <footer id="mu-footer">
     <!-- start footer top -->
@@ -404,7 +532,7 @@
           <div class="row">
             <div class="col-lg-3 col-md-3 col-sm-3">
               <div class="mu-footer-widget">
-              <h4>Links</h4>
+                <h4>Links</h4>
                 <ul>
                   <li><a href="">Minha Conta</a></li>
                   <li><a href="#">Sobre</a></li>
@@ -416,7 +544,7 @@
             </div>
             <div class="col-lg-3 col-md-3 col-sm-3">
               <div class="mu-footer-widget">
-              <h4>Cursos</h4>
+                <h4>Cursos</h4>
                 <ul>
                   <li><a href="#"> Penteados</a></li>
                   <li><a href="">Maquilhagem</a></li>
@@ -428,7 +556,7 @@
             </div>
             <div class="col-lg-3 col-md-3 col-sm-3">
               <div class="mu-footer-widget">
-              <h4>News letter</h4>
+                <h4>News letter</h4>
                 <p>Subscreva-te e fique a par da novidade e ofertas</p>
                 <form class="mu-subscribe-form">
                   <input type="email" placeholder="Type your Email">
@@ -438,7 +566,7 @@
             </div>
             <div class="col-lg-3 col-md-3 col-sm-3">
               <div class="mu-footer-widget">
-              <h4>Contactos</h4>
+                <h4>Contactos</h4>
                 <address>
                   <p>Endereço:</p>
                   <p>Phone: (+258) 841068822 </p>
@@ -456,14 +584,60 @@
     <div class="mu-footer-bottom">
       <div class="container">
         <div class="mu-footer-bottom-area">
-        <p>&copy; All Right Reserved. Designed by <a href="http://www.pentemagico.co.mz/" rel="nofollow">Angela Maressane</a></p>
+          <p>&copy; All Right Reserved. Designed by <a href="http://www.pentemagico.co.mz/" rel="nofollow">Angela Maressane</a></p>
         </div>
       </div>
     </div>
     <!-- end footer bottom -->
   </footer>
   <!-- End footer -->
+
+
+
+
+  <div id="id01" class="modal">
   
+    <form class="modal-content animate" action="" method="post">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <img src="" alt="Avatar" class="avatar">
+      </div>
+  
+      <div class="login-container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+  
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+          
+        <button type="submit">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+  
+      <div class="login-container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+    </form>
+  </div>
+  
+  <script>
+  // Get the modal
+  var modal = document.getElementById('id01');
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
+  </script>
+
+
+
+
   <!-- jQuery library -->
   <script src="assets/js/jquery.min.js"></script>  
   <!-- Include all compiled plugins (below), or include individual files as needed -->
