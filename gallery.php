@@ -104,9 +104,9 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
          <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
-            <li class="active"><a href="index.php">Home</a></li> 
+            <li ><a href="index.php">Home</a></li> 
             <li><a href="courses.php">Cursos</a></li>            
-            <li><a href="gallery.php">Galeria</a></li>
+            <li class="active"><a href="gallery.php">Galeria</a></li>
             <li><a href="contact.php">Contactos</a></li>             
             <li><a href="#" id="mu-search-icon"><i class="fa fa-search"></i></a></li>
           </ul>                    

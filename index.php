@@ -1,3 +1,10 @@
+<?php
+
+require_once("modal-login.php");
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -282,7 +289,7 @@
                     <p>Neste curso, voce ira aprender tecnicas para fazer penteados, desde os casuais ate
                        aos cerimoniais com destaque para Noivas.</p>
                     <div class="mu-latest-course-single-contbottom">
-                      <a class="mu-course-details" href="#">Detalhes</a>
+                      <a class="mu-course-details" href="course-detail.php">Detalhes</a>
                       <span class="mu-course-price" href="#">MZN 10.000</span>
                     </div>
                   </div>
@@ -301,7 +308,7 @@
                   <h4><a href="#">Curso de Maquilhagem</a></h4>
                     <p>Este curso e direcionado a quem queira ser Artista de make up, ensinamos desde a maquilhagem basica ate para eventos...</p>
                     <div class="mu-latest-course-single-contbottom">
-                      <a class="mu-course-details" href="#">Detalhes</a>
+                      <a class="mu-course-details" href="course-detail.php">Detalhes</a>
                       <span class="mu-course-price" href="#">MZN 5000</span>
                     </div>
                   </div>
@@ -321,7 +328,7 @@
                     <p>No curso e Tratamento Facial, voce vai conhecer a seu tipo de pele, bem como conhecer os cuidados a
                        ter</p>
                     <div class="mu-latest-course-single-contbottom">
-                      <a class="mu-course-details" href="#">Detalhes</a>
+                      <a class="mu-course-details" href="course-detail.php">Detalhes</a>
                       <span class="mu-course-price" href="#">MZN 2000</span>
                     </div>
                   </div>
@@ -340,7 +347,7 @@
                   <h4><a href="#">Curso de Manicure e pedicure</a></h4>
                     <p>No curso de manicure e Pedicure voce aprendera a cuidar das maos e dos pes, colocar e fazer manutencao de unhas.</p>
                     <div class="mu-latest-course-single-contbottom">
-                      <a class="mu-course-details" href="#">Detalhes</a>
+                      <a class="mu-course-details" href="course-detail.php">Detalhes</a>
                       <span class="mu-course-price" href="#">MZN 5000</span>
                     </div>
                   </div>
@@ -359,7 +366,7 @@
                   <h4><a href="#">Curso de Dreadlocks</a></h4>
                     <p>Aqui voce vai aprender a iniciar dreads, com gel bem como com croche, </p>
                     <div class="mu-latest-course-single-contbottom">
-                      <a class="mu-course-details" href="#">Detalhes</a>
+                      <a class="mu-course-details" href="course-detail.php">Detalhes</a>
                       <span class="mu-course-price" href="#">MZN 4000</span>
                     </div>
                   </div>
@@ -378,7 +385,7 @@
                   <h4><a href="#">Trancas</a></h4>
                     <p>Neste curso voce vai aprender a fazer diversas trancas, com cabelo e meixas.</p>
                     <div class="mu-latest-course-single-contbottom">
-                      <a class="mu-course-details" href="#">Detalhes</a>
+                      <a class="mu-course-details" href="course-detail.php">Detalhes</a>
                       <span class="mu-course-price" href="#">MZN 5000</span>
                     </div>
                   </div>

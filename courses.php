@@ -105,8 +105,8 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
-          <li class="active"><a href="index.php">Home</a></li> 
-          <li><a href="course.php">Cursos</a></li>            
+          <li><a href="index.php">Home</a></li> 
+          <li class="active"><a href="courses.php">Cursos</a></li>            
           <li><a href="gallery.php">Galeria</a></li>
           <li><a href="contact.php">Contactos</a></li>             
           <li><a href="#" id="mu-search-icon"><i class="fa fa-search"></i></a></li>
@@ -173,7 +173,7 @@
                         <p>Neste curso, voce ira aprender tecnicas para fazer penteados, desde os casuais ate
                      aos cerimoniais com destaque para Noivas.</p>
                         <div class="mu-latest-course-single-contbottom">
-                          <a class="mu-course-details" href="#">Detalhes</a>
+                          <a class="mu-course-details" href="course-detail.php">Detalhes</a>
                           <span class="mu-course-price" href="#">MZN5000.00</span>
                         </div>
                       </div>
@@ -192,7 +192,7 @@
                         <h4><a href="#">Curso.</a></h4>
                         <p>.</p>
                         <div class="mu-latest-course-single-contbottom">
-                          <a class="mu-course-details" href="#">Detalhes</a>
+                          <a class="mu-course-details" href="course-detail.php">Detalhes</a>
                           <span class="mu-course-price" href="#">MZN5000.00</span>
                         </div>
                       </div>
@@ -211,7 +211,7 @@
                         <h4><a href="#">Curso.</a></h4>
                         <p>Neste curso, voce ira aprender tecnicas para fazer penteados, desde os casuais ate aos cerimoniais com destaque para Noivas.</p>
                         <div class="mu-latest-course-single-contbottom">
-                          <a class="mu-course-details" href="#">Detalhes</a>
+                          <a class="mu-course-details" href="course-detail.php">Detalhes</a>
                           <span class="mu-course-price" href="#">MZN5000.00</span>
                         </div>
                       </div>
@@ -230,7 +230,7 @@
                         <h4><a href="#">Curso.</a></h4>
                         <p>Neste curso, voce ira aprender tecnicas para fazer penteados, desde os casuais ate aos cerimoniais com destaque para Noivas.</p>
                         <div class="mu-latest-course-single-contbottom">
-                          <a class="mu-course-details" href="#">Detalhes</a>
+                          <a class="mu-course-details" href="course-detail.php">Detalhes</a>
                           <span class="mu-course-price" href="#">MZN5000.00</span>
                         </div>
                       </div>
@@ -249,7 +249,7 @@
                         <h4><a href="#">Curso.</a></h4>
                         <p>Neste curso, voce ira aprender tecnicas para fazer penteados, desde os casuais ate aos cerimoniais com destaque para Noivas.</p>
                         <div class="mu-latest-course-single-contbottom">
-                          <a class="mu-course-details" href="#">Detalhes</a>
+                          <a class="mu-course-details" href="course-detail.php">Detalhes</a>
                           <span class="mu-course-price" href="#">MZN5000.00</span>
                         </div>
                       </div>
@@ -268,7 +268,7 @@
                         <h4><a href="#">Curso.</a></h4>
                         <p>Neste curso, voce ira aprender tecnicas para fazer penteados, desde os casuais ate aos cerimoniais com destaque para Noivas.</p>
                         <div class="mu-latest-course-single-contbottom">
-                          <a class="mu-course-details" href="#">Detalhes</a>
+                          <a class="mu-course-details" href="course-detail.php">Detalhes</a>
                           <span class="mu-course-price" href="#">MZN5000.00</span>
                         </div>
                       </div>

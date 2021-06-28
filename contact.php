@@ -106,10 +106,10 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
-          <li class="active"><a href="index.php">Home</a></li> 
-          <li><a href="course.php">Cursos</a></li>            
+          <li><a href="index.php">Home</a></li> 
+          <li><a href="courses.php">Cursos</a></li>            
           <li><a href="gallery.php">Galeria</a></li>
-          <li><a href="contact.php">Contactos</a></li>             
+          <li class="active"><a href="contact.php">Contactos</a></li>             
           <li><a href="#" id="mu-search-icon"><i class="fa fa-search"></i></a></li>
           </ul>                   
         </div><!--/.nav-collapse -->        
@@ -142,7 +142,7 @@
          <h2>Contactos</h2>
            <ol class="breadcrumb">
            <li> <a href="index.php">Home</a></li>
-                <li class="active"><a href="">Contacto</a></li>
+                <li class="active">Contactos</li>
           </ol>
          </div>
        </div>
@@ -168,22 +168,27 @@
             <div class="row">
               <div class="col-md-6">
                 <div class="mu-contact-left">
-                  <form class="contactform">                  
+                  <form  method="post" class="contactform" action="send.php">                  
                     <p class="comment-form-author">
-                    <label for="">Nome completo <span class="required">*</span></label> 
-                     <input type="text" name="nome" placeholder="Digite seu nome "><br>
+                    <label for="">Nome completo</label> 
+                     <input type="text" name="name" placeholder="Digite seu nome "><br>
                     </p>
                     <p class="comment-form-email">
                     <label for="">Email <span class="required">*</span></label> 
-                                <input type="text" name="email" placeholder="Digite o seu email(ex: seuemail@email.com)">
+                      <input type="text" name="email" placeholder="Digite o seu email(ex: seuemail@email.com)">
+                    </p>
+
+                    <p class="comment-form-url">
+                      <label for="subject">Telefone<span class="required">*</span></label>
+                      <input type="text" name="cell">  
                     </p>
                     <p class="comment-form-url">
-                      <label for="subject">Assunto</label>
+                      <label for="subject">Assunto<span class="required">*</span></label>
                       <input type="text" name="subject">  
                     </p>
                     <p class="comment-form-comment">
                       <label for="comment">Mensagem</label>
-                      <textarea required="required" aria-required="true" rows="8" cols="45" name="comment"></textarea>
+                      <textarea required="required" aria-required="true" rows="8" cols="45" name="message"></textarea>
                     </p>                
                     <p class="form-submit">
                       <input type="submit" value="Send Message" class="mu-post-btn" name="submit">
