@@ -34,7 +34,7 @@
             </nav>
 <style>
    .navbar-custom {
-    background-color: #135B7D;
+    background-color: #7c1362;
 }
 
 .navbar-top-links>li>a{
