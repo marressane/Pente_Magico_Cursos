@@ -36,12 +36,7 @@ require_once("modal-login.php");
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,300,300italic,500,700' rel='stylesheet' type='text/css'>
     
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+   
 
   </head>
   <body> 
@@ -280,7 +275,7 @@ require_once("modal-login.php");
                   <figure class="mu-latest-course-img">
                     <a href="#"><img src="assets/img/courses/1.jpg" alt="img"></a>
                     <figcaption class="mu-latest-course-imgcaption">
-                    <a href="#">Curso de Penteados</a>
+                    <a href="#">Inscrever-se</a>
                       <span><i class="fa fa-clock-o"></i>90Dias</span>
                     </figcaption>
                   </figure>
@@ -300,7 +295,7 @@ require_once("modal-login.php");
                   <figure class="mu-latest-course-img">
                     <a href="#"><img src="assets/img/courses/2.jpg" alt="img"></a>
                     <figcaption class="mu-latest-course-imgcaption">
-                    <a href="#">Curso de Maquilhagem</a>
+                    <a href="#">Inscrever-se</a>
                       <span><i class="fa fa-clock-o"></i>75Dias</span>
                     </figcaption>
                   </figure>
@@ -319,8 +314,8 @@ require_once("modal-login.php");
                   <figure class="mu-latest-course-img">
                     <a href="#"><img src="assets/img/courses/3.jpg" alt="img"></a>
                     <figcaption class="mu-latest-course-imgcaption">
-                    <a href="#">Curso de Tratamento Facial</a>
-                      <span><i class="fa fa-clock-o"></i>45Dias</span>an>
+                    <a href="#">Inscrever-se</a>
+                      <span><i class="fa fa-clock-o"></i>45Dias</span>
                     </figcaption>
                   </figure>
                   <div class="mu-latest-course-single-content">
@@ -339,7 +334,7 @@ require_once("modal-login.php");
                   <figure class="mu-latest-course-img">
                     <a href="#"><img src="assets/img/courses/1.jpg" alt="img"></a>
                     <figcaption class="mu-latest-course-imgcaption">
-                    <a href="#">Curso de Manicure e pedicure</a>
+                    <a href="#">Inscrever-se</a>
                       <span><i class="fa fa-clock-o"></i>3 Semanas</span>
                     </figcaption>
                   </figure>
@@ -358,7 +353,7 @@ require_once("modal-login.php");
                   <figure class="mu-latest-course-img">
                     <a href="#"><img src="assets/img/courses/2.jpg" alt="img"></a>
                     <figcaption class="mu-latest-course-imgcaption">
-                    <a href="#">Curso de Dreadlocks</a>
+                    <a href="#">Inscrever-se</a>
                       <span><i class="fa fa-clock-o"></i>75Dias</span>
                     </figcaption>
                   </figure>
@@ -377,7 +372,7 @@ require_once("modal-login.php");
                   <figure class="mu-latest-course-img">
                     <a href="#"><img src="assets/img/courses/3.jpg" alt="img"></a>
                     <figcaption class="mu-latest-course-imgcaption">
-                    <a href="#">Trancas</a>
+                    <a href="#">Inscrever-se</a>
                       <span><i class="fa fa-clock-o"></i>45Dias</span>
                     </figcaption>
                   </figure>

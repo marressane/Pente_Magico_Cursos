@@ -1,3 +1,9 @@
+<?php
+
+require_once("modal-login.php");
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -29,12 +35,7 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,300,300italic,500,700' rel='stylesheet' type='text/css'>
     
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    
 
   </head>
   <body> 
@@ -179,6 +180,7 @@
 
             <div class="mu-gallery-body">
               <ul id="mixit-container" class="row">
+
                 <!-- start single gallery image -->
                 <li class="col-md-4 col-sm-6 col-xs-12 mix maquilhagem">
                   <div class="mu-single-gallery">  
@@ -204,17 +206,42 @@
                   </div>
                 </li>
                 <!-- start single gallery image -->
+
+                <li class="col-md-4 col-sm-6 col-xs-12 mix Penteados">
+                  <div class="mu-single-gallery">  
+
+                    <div class="mu-single-gallery-item">
+
+                      <div class="mu-single-gallery-img">
+                        <a href="#"><img alt="img" src="assets/img/gallery/small/2.jpg"></a>
+                      </div>
+
+                      <div class="mu-single-gallery-info">
+
+                        <div class="mu-single-gallery-info-inner">
+                          <h4>Maquilhagem</h4>
+                          <p>MAquilhagem turma 2020 </p>
+                          <a href="assets/img/gallery/big/3.jpg" data-fancybox-group="gallery" class="fancybox"><span class="fa fa-eye"></span></a>
+                          <a href="#" class="aa-link"><span class="fa fa-link"></span></a>
+                        </div>
+                        
+                      </div>                  
+                    </div>
+
+                  </div>
+                </li>
+ <!-- start single gallery image -->
                <li class="col-md-4 col-sm-6 col-xs-12 mix maquilhagem">
                   <div class="mu-single-gallery">                  
                     <div class="mu-single-gallery-item">
                       <div class="mu-single-gallery-img">
-                        <a href="#"><img alt="img" src="assets/img/gallery/small/2.jpg"></a>
+                        <a href="#"><img alt="img" src="assets/img/gallery/small/3.jpg"></a>
                       </div>
                        <div class="mu-single-gallery-info">
                         <div class="mu-single-gallery-info-inner">
-                          <h4>Image Title</h4>
-                          <p>decripction</p>
-                          <a href="assets/img/gallery/big/2.jpg" data-fancybox-group="gallery" class="fancybox"><span class="fa fa-eye"></span></a>
+                          <h4>Tratamento Facial</h4>
+                          <p>Tratamento Facial turma 2020</p>
+                          <a href="assets/img/gallery/big/3.jpg" data-fancybox-group="gallery" class="fancybox"><span class="fa fa-eye"></span></a>
                           <a href="#" class="aa-link"><span class="fa fa-link"></span></a>
                         </div>
                       </div> 
@@ -226,13 +253,13 @@
                   <div class="mu-single-gallery">                  
                     <div class="mu-single-gallery-item">
                       <div class="mu-single-gallery-img">
-                        <a href="#"><img alt="img" src="assets/img/gallery/small/3.jpg"></a>
+                        <a href="#"><img alt="img" src="assets/img/gallery/small/6.jpg"></a>
                       </div>
                       <div class="mu-single-gallery-info">
                         <div class="mu-single-gallery-info-inner">
                           <h4>Image Title</h4>
                           <p>descripction</p>
-                          <a href="assets/img/gallery/big/3.jpg" data-fancybox-group="gallery" class="fancybox"><span class="fa fa-eye"></span></a>
+                          <a href="assets/img/gallery/big/6.jpg" data-fancybox-group="gallery" class="fancybox"><span class="fa fa-eye"></span></a>
                           <a href="#" class="aa-link"><span class="fa fa-link"></span></a>
                         </div>
                       </div>
@@ -244,13 +271,13 @@
                   <div class="mu-single-gallery">                  
                     <div class="mu-single-gallery-item">
                       <div class="mu-single-gallery-img">
-                        <a href="#"><img alt="img" src="assets/img/gallery/small/4.jpg"></a>
+                        <a href="#"><img alt="img" src="assets/img/gallery/small/7.jpg"></a>
                       </div>
                        <div class="mu-single-gallery-info">
                         <div class="mu-single-gallery-info-inner">
                           <h4>Image Title</h4>
                           <p>decripction</p>
-                          <a href="assets/img/gallery/big/4.jpg" data-fancybox-group="gallery" class="fancybox"><span class="fa fa-eye"></span></a>
+                          <a href="assets/img/gallery/big/7.jpg" data-fancybox-group="gallery" class="fancybox"><span class="fa fa-eye"></span></a>
                           <a href="#" class="aa-link"><span class="fa fa-link"></span></a>
                         </div>
                       </div>
@@ -262,13 +289,13 @@
                   <div class="mu-single-gallery">                  
                     <div class="mu-single-gallery-item">
                       <div class="mu-single-gallery-img">
-                        <a href="#"><img alt="img" src="assets/img/gallery/small/5.jpg"></a>
+                        <a href="#"><img alt="img" src="assets/img/gallery/small/2.jpg"></a>
                       </div>
                       <div class="mu-single-gallery-info">
                         <div class="mu-single-gallery-info-inner">
                           <h4>Image Title</h4>
                           <p>decripction</p>
-                          <a href="assets/img/gallery/big/5.jpg" data-fancybox-group="gallery" class="fancybox"><span class="fa fa-eye"></span></a>
+                          <a href="assets/img/gallery/big/6.jpg" data-fancybox-group="gallery" class="fancybox"><span class="fa fa-eye"></span></a>
                           <a href="#" class="aa-link"><span class="fa fa-link"></span></a>
                         </div>
                       </div>
