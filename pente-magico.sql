@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.0
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Tempo de geração: 01-Jul-2021 às 03:12
--- Versão do servidor: 10.4.18-MariaDB
--- versão do PHP: 7.3.28
+-- Host: localhost
+-- Generation Time: Jul 01, 2021 at 10:53 AM
+-- Server version: 10.4.13-MariaDB
+-- PHP Version: 7.4.7
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,33 +18,34 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Banco de dados: `pente-magico`
+-- Database: `pente-magico`
 --
 
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `cursoformando`
+-- Table structure for table `convites`
 --
 
-CREATE TABLE `cursoformando` (
-  `idcursoformando` int(10) UNSIGNED NOT NULL,
-  `formando_idformando` int(11) NOT NULL,
-  `cursos_idcursos` int(11) NOT NULL
+CREATE TABLE `convites` (
+  `id_convite` int(11) NOT NULL,
+  `fk_id_destinatario` int(11) NOT NULL,
+  `fk_id_remetente` int(11) NOT NULL,
+  `fk_id_evento` int(11) NOT NULL,
+  `status` tinyint(1) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Extraindo dados da tabela `cursoformando`
+-- Dumping data for table `convites`
 --
 
-INSERT INTO `cursoformando` (`idcursoformando`, `formando_idformando`, `cursos_idcursos`) VALUES
-(1, 7, 8),
-(2, 8, 7);
+INSERT INTO `convites` (`id_convite`, `fk_id_destinatario`, `fk_id_remetente`, `fk_id_evento`, `status`) VALUES
+(1, 2, 1, 2, NULL);
 
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `cursos`
+-- Table structure for table `cursos`
 --
 
 CREATE TABLE `cursos` (
@@ -54,26 +55,51 @@ CREATE TABLE `cursos` (
   `duracao` varchar(200) DEFAULT NULL,
   `lotacao` varchar(45) DEFAULT NULL,
   `lugar` varchar(45) DEFAULT NULL,
-  `data-de-inicio-curso` varchar(45) DEFAULT NULL,
-  `data` date NOT NULL,
+  `data-de-inicio-curso` date DEFAULT NULL,
+  `data` datetime NOT NULL,
   `dataupdate` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
   `desc_resumida` varchar(100) DEFAULT NULL,
   `desc_detalhada` varchar(350) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Extraindo dados da tabela `cursos`
+-- Dumping data for table `cursos`
 --
 
 INSERT INTO `cursos` (`idcursos`, `nome-curso`, `preco`, `duracao`, `lotacao`, `lugar`, `data-de-inicio-curso`, `data`, `dataupdate`, `desc_resumida`, `desc_detalhada`) VALUES
-(7, 'Penteados casuais', '5000', '45 dias', '10', 'Matola, bairro t3- Salao Rita', '03-09-2021', '0000-00-00', '2021-06-30 23:25:26', 'Neste curso, voce ira aprender tecnicas para ', 'Neste curso, voce ira aprender tecnicas para '),
-(8, 'Auto-Maquilhagem', '3000', '15 dias', '20', 'Boane, Bairro Juba-Irina Croche', '04-10-2021', '0000-00-00', '2021-06-30 23:25:26', 'Neste curso, voce ira aprender tecnicas para ', 'Neste curso, voce ira aprender tecnicas para '),
-(9, 'Texturizacao', '2000', '5 dias', '10', 'Matola, bairro t3- Salao Rita', '03-09-2021', '0000-00-00', '2021-06-30 23:25:26', '03/09/2021', '03/09/2021');
+(7, 'Penteados casuais', '5000', '45 dias', '10', 'Matola, bairro t3- Salao Rita', '2021-07-30', '2021-06-30 00:00:00', '2021-06-30 21:25:26', 'Neste curso, voce ira aprender tecnicas para ', 'Neste curso, voce ira aprender tecnicas para '),
+(8, 'Auto-Maquilhagem', '3000', '15 dias', '20', 'Boane, Bairro Juba-Irina Croche', '2021-10-04', '2021-06-30 00:00:00', '2021-06-30 21:25:26', 'Neste curso, voce ira aprender tecnicas para ', 'Neste curso, voce ira aprender tecnicas para '),
+(9, 'Texturizacao', '2000', '5 dias', '10', 'Matola, bairro t3- Salao Rita', '2021-07-30', '2021-06-30 00:00:00', '2021-06-30 21:25:26', '2021-06-30', '2021-06-30');
 
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `formador`
+-- Table structure for table `eventos`
+--
+
+CREATE TABLE `eventos` (
+  `id_evento` int(11) NOT NULL,
+  `fk_id_usuario` int(11) DEFAULT NULL,
+  `titulo` varchar(255) NOT NULL,
+  `descricao` varchar(255) NOT NULL,
+  `cor` varchar(7) DEFAULT NULL,
+  `inicio` datetime NOT NULL,
+  `termino` datetime DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `eventos`
+--
+
+INSERT INTO `eventos` (`id_evento`, `fk_id_usuario`, `titulo`, `descricao`, `cor`, `inicio`, `termino`) VALUES
+(1, 1, 'Curso de Penteados para Noiva', 'Curso de Penteados para Noiva na sircursal da Matola', '#40E0D0', '2021-07-13 13:30:00', '2021-08-06 16:30:00'),
+(2, 1, 'Entrevista Tecnica', 'Entrevista com Carlos da TokenLab.', '#FF0000', '2021-07-21 04:59:38', '2021-08-11 10:30:00'),
+(3, 2, 'Capacitação dos Formandores', 'Formacao de Formandores todos os da Pente Magico para aprimorar as suas compentenncais', '#0071c5', '2021-07-12 18:00:00', '2021-07-13 00:00:00');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `formador`
 --
 
 CREATE TABLE `formador` (
@@ -87,7 +113,7 @@ CREATE TABLE `formador` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Extraindo dados da tabela `formador`
+-- Dumping data for table `formador`
 --
 
 INSERT INTO `formador` (`idformador`, `nomeformador`, `especialidade`, `endereco`, `cidade`, `email`, `telefone`) VALUES
@@ -98,7 +124,7 @@ INSERT INTO `formador` (`idformador`, `nomeformador`, `especialidade`, `endereco
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `formando`
+-- Table structure for table `formando`
 --
 
 CREATE TABLE `formando` (
@@ -111,7 +137,7 @@ CREATE TABLE `formando` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Extraindo dados da tabela `formando`
+-- Dumping data for table `formando`
 --
 
 INSERT INTO `formando` (`idformando`, `nomeformando`, `endereco`, `cidade`, `telefone`, `email`) VALUES
@@ -124,133 +150,91 @@ INSERT INTO `formando` (`idformando`, `nomeformando`, `endereco`, `cidade`, `tel
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `perfil`
+-- Table structure for table `usuarios`
 --
 
-CREATE TABLE `perfil` (
-  `idperfil` int(11) NOT NULL,
-  `nomeperfil` varchar(45) DEFAULT NULL
+CREATE TABLE `usuarios` (
+  `id_usuario` int(11) NOT NULL,
+  `nome` varchar(15) NOT NULL,
+  `senha` text NOT NULL,
+  `nomecompleto` varchar(45) NOT NULL,
+  `cargo` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Extraindo dados da tabela `perfil`
+-- Dumping data for table `usuarios`
 --
 
-INSERT INTO `perfil` (`idperfil`, `nomeperfil`) VALUES
-(1, 'Admin'),
-(2, 'Formador'),
-(3, 'Formando');
-
--- --------------------------------------------------------
+INSERT INTO `usuarios` (`id_usuario`, `nome`, `senha`, `nomecompleto`, `cargo`) VALUES
+(1, 'Jacinto', '63ab910cb3a7bc89faae5a46aa337aa22f5f4d30', 'Jacinto Mulungo', 'Gerente'),
+(2, 'Angela', '7110eda4d09e062aa5e4a390b0a572ac0d2c0220', 'Angela', 'Formador'),
+(5, 'Marta', '348162101fc6f7e624681b7400b085eeac6df7bd', 'Marta Mavie', 'Formador');
 
 --
--- Estrutura da tabela `usuario`
---
-
-CREATE TABLE `usuario` (
-  `idusuario` int(11) NOT NULL,
-  `email` varchar(45) DEFAULT NULL,
-  `senha` varchar(45) DEFAULT NULL,
-  `perfil_idperfil` int(11) NOT NULL COMMENT '''admin'',''formando'', ''formador'''
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Extraindo dados da tabela `usuario`
---
-
-INSERT INTO `usuario` (`idusuario`, `email`, `senha`, `perfil_idperfil`) VALUES
-(6, 'emasilva@email.com', '1111', 3),
-(7, 'emasilva@email.com', '2222', 3),
-(8, 'martamavie@gmail.com', '3333', 2),
-(9, 'marressane@gmail.com', '4444', 1);
-
---
--- Índices para tabelas despejadas
+-- Indexes for dumped tables
 --
 
 --
--- Índices para tabela `cursoformando`
+-- Indexes for table `convites`
 --
-ALTER TABLE `cursoformando`
-  ADD PRIMARY KEY (`idcursoformando`),
-  ADD KEY `formando_idformando` (`formando_idformando`),
-  ADD KEY `cursos_idcursos` (`cursos_idcursos`);
+ALTER TABLE `convites`
+  ADD PRIMARY KEY (`id_convite`),
+  ADD KEY `fk_id_destinatario` (`fk_id_destinatario`),
+  ADD KEY `fk_id_remetente` (`fk_id_remetente`),
+  ADD KEY `fk_id_evento` (`fk_id_evento`);
 
 --
--- Índices para tabela `cursos`
+-- Indexes for table `eventos`
 --
-ALTER TABLE `cursos`
-  ADD PRIMARY KEY (`idcursos`);
+ALTER TABLE `eventos`
+  ADD PRIMARY KEY (`id_evento`),
+  ADD KEY `fk_id_usuario` (`fk_id_usuario`);
 
 --
--- Índices para tabela `formador`
+-- Indexes for table `usuarios`
 --
-ALTER TABLE `formador`
-  ADD PRIMARY KEY (`idformador`);
+ALTER TABLE `usuarios`
+  ADD PRIMARY KEY (`id_usuario`);
 
 --
--- Índices para tabela `formando`
---
-ALTER TABLE `formando`
-  ADD PRIMARY KEY (`idformando`);
-
---
--- Índices para tabela `perfil`
---
-ALTER TABLE `perfil`
-  ADD PRIMARY KEY (`idperfil`);
-
---
--- Índices para tabela `usuario`
---
-ALTER TABLE `usuario`
-  ADD PRIMARY KEY (`idusuario`,`perfil_idperfil`),
-  ADD KEY `perfil_idperfil` (`perfil_idperfil`);
-
---
--- AUTO_INCREMENT de tabelas despejadas
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT de tabela `cursos`
+-- AUTO_INCREMENT for table `convites`
 --
-ALTER TABLE `cursos`
-  MODIFY `idcursos` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+ALTER TABLE `convites`
+  MODIFY `id_convite` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT de tabela `formador`
+-- AUTO_INCREMENT for table `eventos`
 --
-ALTER TABLE `formador`
-  MODIFY `idformador` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+ALTER TABLE `eventos`
+  MODIFY `id_evento` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT de tabela `formando`
+-- AUTO_INCREMENT for table `usuarios`
 --
-ALTER TABLE `formando`
-  MODIFY `idformando` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+ALTER TABLE `usuarios`
+  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT de tabela `usuario`
---
-ALTER TABLE `usuario`
-  MODIFY `idusuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
-
---
--- Restrições para despejos de tabelas
+-- Constraints for dumped tables
 --
 
 --
--- Limitadores para a tabela `cursoformando`
+-- Constraints for table `convites`
 --
-ALTER TABLE `cursoformando`
-  ADD CONSTRAINT `cursoformando_ibfk_1` FOREIGN KEY (`formando_idformando`) REFERENCES `formando` (`idformando`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `cursoformando_ibfk_2` FOREIGN KEY (`cursos_idcursos`) REFERENCES `cursos` (`idcursos`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+ALTER TABLE `convites`
+  ADD CONSTRAINT `convites_ibfk_1` FOREIGN KEY (`fk_id_destinatario`) REFERENCES `usuarios` (`id_usuario`),
+  ADD CONSTRAINT `convites_ibfk_2` FOREIGN KEY (`fk_id_remetente`) REFERENCES `usuarios` (`id_usuario`),
+  ADD CONSTRAINT `convites_ibfk_3` FOREIGN KEY (`fk_id_evento`) REFERENCES `eventos` (`id_evento`);
 
 --
--- Limitadores para a tabela `usuario`
+-- Constraints for table `eventos`
 --
-ALTER TABLE `usuario`
-  ADD CONSTRAINT `usuario_ibfk_1` FOREIGN KEY (`perfil_idperfil`) REFERENCES `perfil` (`idperfil`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+ALTER TABLE `eventos`
+  ADD CONSTRAINT `eventos_ibfk_1` FOREIGN KEY (`fk_id_usuario`) REFERENCES `usuarios` (`id_usuario`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -408,7 +408,7 @@ require_once("modal-login.php");
               <div class="mu-footer-widget">
               <h4>Links</h4>
                 <ul>
-                  <li><a href="">Minha Conta</a></li>
+                  <li><a href="admin/index.php">Minha Conta</a></li>
                   <li><a href="#">Sobre</a></li>
                   <li><a href="">Blog</a></li>
                   <li><a href="">Cursos</a></li>
