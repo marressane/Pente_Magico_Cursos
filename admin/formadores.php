@@ -1,15 +1,41 @@
 
 
+
+    <?php
+// Auth 
+if(!isset($_SESSION)){
+  session_start();
+}
+
+$id_user = $_SESSION['idUsuario'];
+
+if(!isset ($_SESSION['idUsuario'])) {
+  header('Location: login.php');
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Cursos</title>
-  
+    <title>Formadores</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	
+  <!-- FullCalendar -->
+  <link href='css/fullcalendar.css' rel='stylesheet' />
+  <link href='css/fullcalendar.print.min.css' rel='stylesheet' media='print' />
 
-    <?php include ('menu/menuSuperior.php'); ?>
+    <!-- Custom CSS Calendario -->
+    <link href='css/calendar.css' rel='stylesheet' />
+  
+    
 </head>
 <body>
+<?php include ('menu/menuSuperior.php'); ?>
+
+
 <div class="container mt-2">
     <div class="row">
         <div class="col-md-12">
@@ -22,34 +48,33 @@
         </div>
         <div class="col-md-12">
             <div class="float-left">
-                <h2>Lista dos Cursos</h2>
+                <h2>Formadores</h2>
             </div>            
             <div class="float-right">
-                <a href="addcourse.php" class="btn btn-success">Adicionar novo curso</a>
+                <a href="addformador.php" class="btn btn-success"> Adicionar Novo Formador</a>
             </div>
            
             <table class="table">
               <thead>
                 <tr>
                   <th scope="col">#</th>
-                  <th scope="col">Nome do Curso</th>
-                  <th scope="col">Preço</th>
-                  <th scope="col">Duracão</th>
-                  <th scope="col">Lotação</th>
-                  <th scope="col">Lugar</th>
-                  <th scope="col">Data de Inicio</th>
-                  <th scope="col">Data de Criacao</th>
-                  <th scope="col">Data de Actualização</th>
-                  <th scope="col">Descriçao</th>
-                  <th scope="col">Detalhes</th>
-                  <th scope="col">Action</th>
+                  <th scope="col">Nome do formador</th>
+                  
+                  <th scope="col">Especialidade</th>
+                  <th scope="col">Endereço</th>
+                  <th scope="col">Cidade</th>
+                
+                  <th scope="col">Email</th>
+                  <th scope="col">Telefone</th>
+
+                  <th scope="col">Acção</th>
                 </tr>
               </thead>
               <tbody>
              
               <?php
                 include '../conexao.php';
-                $query="select * from cursos limit 200"; // Fetch all the data from the table cursos
+                $query="select * from formador limit 200"; // Fetch all the data from the table cursos
                 $result=mysqli_query($con,$query);
                 ?>
                 <?php if ($result->num_rows > 0): ?>
@@ -58,18 +83,18 @@
                 <tr>
                     <th scope="row"><?php echo $array[0];?></th>
                     <td><?php echo $array[1];?></td>
+                  
                     <td><?php echo $array[2];?></td>
                     <td><?php echo $array[3];?></td>
                     <td><?php echo $array[4];?></td>
                     <td><?php echo $array[5];?></td>
                     <td><?php echo $array[6];?></td>
-                    <td><?php echo $array[7];?></td>
-                    <td><?php echo $array[8];?></td>
-                    <td><?php echo $array[9];?></td>
-                    <td><?php echo $array[10];?></td>
+                    
+                    
+                    
                     <td> 
-                      <a href="edit.php?custId=<?php echo $array[0];?>" class="btn btn-primary">Edit</a>
-                      <a href="delete.php?custId=<?php echo $array[0];?>" class="btn btn-danger">Delete</a>
+                      <a href="updateformador.php?idformador=<?php echo $array[0];?>" class="btn btn-primary">Edit</a>
+                      <a href="deleteformador.php?idformador=<?php echo $array[0];?>" class="btn btn-danger">Delete</a>
                 </tr>
                 <?php endwhile; ?>
                 <?php else: ?>
@@ -83,5 +108,13 @@
         </div>
     </div>        
 </div>
+
+
+
+<!-- jQuery Version 1.11.1 -->
+<script src="js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>

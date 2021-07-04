@@ -20,9 +20,9 @@
 
             include 'mydbCon.php';
 
-            $query = "SELECT * FROM course WHERE custId='" . $_GET["custId"] . "'"; // Fetch data from the table course using id
+            $query = "SELECT * FROM course WHERE idcouse='" . $_GET["idcourse"] . "'"; // Fetch data from the table course using id
 
-            $result=mysqli_query($dbCon,$query);
+            $result=mysqli_query($con,$query);
 
         $user = mysqli_fetch_assoc($result);
 
@@ -30,20 +30,20 @@
             ?>
             <form action="update-process.php" method="POST">
 
-              <input type="hidden" name="custId" value="<?php echo $_GET["custId"]; ?>" class="form-control" required="">
+              <input type="hidden" name="idcourse" value="<?php echo $_GET["idcourse"]; ?>" class="form-control" required="">
 
               <div class="form-group">
-                <label for="exampleInputEmail1">First Name</label>
+                <label for="">Nome</label>
                 <input type="text" name="fname" class="form-control" value="<?php echo $user['fname']; ?>" required="">
               </div>                
 
               <div class="form-group">
-                <label for="exampleInputEmail1">Last Name</label>
+                <label for="">Nome</label>
                 <input type="text" name="lname" class="form-control" value="<?php echo $user['lname']; ?>" required="">
               </div>              
 
               <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
+                <label for="">Email address</label>
                 <input type="email" name="email" class="form-control" value="<?php echo $user['email']; ?>" required="">
               </div>
 

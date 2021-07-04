@@ -1,11 +1,45 @@
+<?php 
+
+// Auth 
+if(!isset($_SESSION)){
+    session_start();
+}
+
+$id_user = $_SESSION['idUsuario'];
+
+if(!isset ($_SESSION['idUsuario'])) {
+    header('Location: login.php');
+}
+
+ ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Actualizar Usuario</title>
-    
+<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<meta name="description" content="">
+    	<meta name="author" content="">
+
+    	<title>Home</title>
+
+    	<!-- Bootstrap Core CSS -->
+    	<link href="css/bootstrap.min.css" rel="stylesheet">
+	
+		<!-- FullCalendar -->
+		<link href='css/fullcalendar.css' rel='stylesheet' />
+		<link href='css/fullcalendar.print.min.css' rel='stylesheet' media='print' />
+
+    	<!-- Custom CSS Calendario -->
+    	<link href='css/calendar.css' rel='stylesheet' />
 </head>
 <body>
+  
+
+<?php //Menu Superior 
+include ('menu/menuSuperior.php'); ?>
 
 <div class="container mt-2">
 
@@ -14,13 +48,13 @@
   </div>
 
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-6">
             <?php
 
 
             include 'conexao.php';
 
-            $query = "SELECT * FROM usuario WHERE id_usuario='" . $_GET["id_usuario"] . "'"; // Fetch data from the table course using id
+            $query = "SELECT * FROM usuarios WHERE id_usuario='" . $_GET["id_usuario"] . "'"; // Fetch data from the table course using id
 
             $result=mysqli_query($con,$query);
 
@@ -28,34 +62,55 @@
 
 
             ?>
-            <form action="update-process.php" method="POST">
+            <form action="update-user-process.php" method="POST">
 
-              <input type="hidden" name="custId" value="<?php echo $_GET["custId"]; ?>" class="form-control" required="">
+              <input type="hidden" name="id_usuario" value="<?php echo $_GET["id_usuario"]; ?>" class="form-control" required="">
 
               <div class="form-group">
-                <label for="exampleInputEmail1">Username</label>
-                <input type="text" name="fname" class="form-control" value="<?php echo$user['nome']; ?>" required="">
+                <label for="">Username</label>
+                <input type="text" name="username" class="form-control" value="<?php echo$user['nome']; ?>" required="">
               </div>                
 
               <div class="form-group">
-                <label for="exampleInputEmail1">Last Name</label>
-                <input type="text" name="lname" class="form-control" value="<?php echo$user['senha']; ?>" required="">
+                <label for="">Senha</label>
+                <input type="password" name="senha" class="form-control" value="<?php echo$user['senha']; ?>" required="">
               </div>              
-
+              
               <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" name="email" class="form-control" value="<?php echo$user['nomecompleto']; ?>" required="">
+                <label for="">Nome Completo</label>
+                <input type="text" name="nomecompleto" class="form-control" value="<?php echo$user['nomecompleto']; ?>" required="">
               </div>
 
+            
 
               <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="text" name="email" class="form-control" value="<?php echo$user['cargo']; ?>" required="">
+                <label for="">Cargo</label>
+                <input type="text" class="form-control" value="<?php echo$user['cargo']; ?>"  readonly>
               </div>
+              <div class="form-group">
+					<label for="cor" class="col-sm-3 control-label">Novo Cargo</label>
+					<div class="col-sm-6">
+					  <select name="cargo" class="form-control" id="cor">
+					  <option value="">Selecionar</option>
+						  <option value="Gerente">Gerente</option>
+						  <option value="Formador">Formador</option>
+						  <option value="Assistente">Assistente</option>						  
+						  <option value="Coordenador">Coordenador</option>
+			
+						  
+						</select>
+					</div>
+				  </div>
 
 
+<br>
+<br>
 
-              <button type="submit" class="btn btn-primary" value="submit">Submit</button>
+<br>
+<br>
+
+
+              <button type="submit" class="btn btn-primary" value="submit">Actualizar</button>
 
             </form>
         </div>

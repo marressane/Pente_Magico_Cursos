@@ -13,9 +13,11 @@
    <nav class="navbar navbar-custom navbar-fixed-top" style="color" role="navigation">
    <ul class="nav navbar-top-links navbar-right">
    <li><a href="index.php">Home</a></li>
-<li><a href="agenda.php">Agenda</a></li>
-<li><a href="courses.php">Cursos</a></li>
+   <li><a href="courses.php">Cursos</a></li>
 <li><a href="formandos.php">Formandos</a></li>
+<li><a href="formadores.php">Formandores</a></li>
+
+<li><a href="agenda.php">Agenda</a></li>
 <li><a href="users.php">Usuarios</a></li>
 <li><a href="../index.php">Website</a></li>
     <!-- Exibe Notificações -->

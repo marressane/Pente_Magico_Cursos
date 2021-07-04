@@ -11,7 +11,7 @@
 <body>
 <div class="container mt-2">
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-6">
             <div class="page-header">
                 <h2>Adicionar Novo Usuario</h2>
             </div>
@@ -37,10 +37,10 @@
 					<div class="col-sm-10">
 					  <select name="cargo" class="form-control" id="cor">
 					  <option value="">Selecionar</option>
-						  <option style="color:#0071c5" value="Gerente">Gerente</option>
-						  <option style="color:#40E0D0" value="Formador">Formador</option>
-						  <option style="color:#008000" value="Assistente">Assistente</option>						  
-						  <option style="color:#FFD700" value="Formador">Coordenador</option>
+						  <option value="Gerente">Gerente</option>
+						  <option value="Formador">Formador</option>
+						  <option value="Assistente">Assistente</option>						  
+						  <option value="Formador">Coordenador</option>
 			
 						  
 						</select>
@@ -62,5 +62,12 @@
         </div>
     </div>        
 </div>
+
+
+<!-- jQuery Version 1.11.1 -->
+<script src="js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -10,7 +10,7 @@
 	}
 
 	require_once('evento/action/conexao.php');
-	date_default_timezone_set('America/Sao_Paulo');
+	// date_default_timezone_set('America/Sao_Paulo');
 
 	$database = new Database();
 	$db = $database->conectar();
@@ -34,7 +34,7 @@
     	<meta name="description" content="">
     	<meta name="author" content="">
 
-    	<title>Calendario - Home</title>
+    	<title>Agenda</title>
 
     	<!-- Bootstrap Core CSS -->
     	<link href="css/bootstrap.min.css" rel="stylesheet">

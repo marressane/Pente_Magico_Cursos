@@ -2,7 +2,7 @@
 if(count($_POST)>0)
 {    
      include 'conexao.php';
-      $nome = $_POST['nomeformando'];
+     $nome = $_POST['nomeformando'];
      $endereco = $_POST['endereco'];
      $cidade = $_POST['cidade'];
      $telefone = $_POST['telefone'];

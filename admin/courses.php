@@ -1,15 +1,39 @@
+<?php
+// Auth 
+if(!isset($_SESSION)){
+  session_start();
+}
 
+$id_user = $_SESSION['idUsuario'];
+
+if(!isset ($_SESSION['idUsuario'])) {
+  header('Location: login.php');
+}
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Cursos</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	
+  <!-- FullCalendar -->
+  <link href='css/fullcalendar.css' rel='stylesheet' />
+  <link href='css/fullcalendar.print.min.css' rel='stylesheet' media='print' />
+
+    <!-- Custom CSS Calendario -->
+    <link href='css/calendar.css' rel='stylesheet' />
   
 
-    <?php include ('menu/menuSuperior.php'); ?>
+    
 </head>
 <body>
+
+<?php include ('menu/menuSuperior.php'); ?>
+
 <div class="container mt-2">
     <div class="row">
         <div class="col-md-12">
@@ -42,7 +66,7 @@
                   <th scope="col">Data de Actualização</th>
                   <th scope="col">Descriçao</th>
                   <th scope="col">Detalhes</th>
-                  <th scope="col">Action</th>
+                  <th scope="col">Acção</th>
                 </tr>
               </thead>
               <tbody>
@@ -83,5 +107,18 @@
         </div>
     </div>        
 </div>
+
+
+
+
+
+
+
+<!-- jQuery Version 1.11.1 -->
+<script src="js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+<body>
 </body>
 </html>
