@@ -42,7 +42,7 @@
     <meta name="description" content="">
     <meta name="author" content="Calendario">
 
-    <title>Calendario</title>
+    <title>Login</title>
 
     <!-- Chamando folhas de estilos CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -78,9 +78,11 @@
                     <form role="form" method="post">
                         <fieldset>
                             <div class="form-group">
+                            <label for="">Usúario</label>
                                 <input class="form-control" placeholder="Usuario" name="usuario" type="username" required>
                             </div>
                             <div class="form-group">
+                            <label for="">Senha</label>
                                 <input class="form-control" placeholder="Senha" name="senha" type="password" required>
                             </div>
                             <input type="submit" class="btn btn-lg btn-primary btn-block" value="Login">
