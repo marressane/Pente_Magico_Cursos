@@ -390,11 +390,11 @@ require_once("modal-login.php");
               <div class="mu-footer-widget">
               <h4>Cursos</h4>
                 <ul>
-                  <li><a href="#">Curso 1</a></li>
-                  <li><a href="">Curso 1</a></li>
-                  <li><a href="">Curso 1</a></li>
-                  <li><a href="">Curso 1</a></li>
-                  <li><a href="">Curso 1</a></li>                 
+                  <li><a href="#">Penteados</a></li>
+                  <li><a href="">Maquilhagem</a></li>
+                  <li><a href="">Manicure e pedicure</a></li>
+                  <li><a href="">Tratamento Facial</a></li>
+                  <li><a href="">Dreadlocks</a></li>                 
                 </ul>
               </div>
             </div>

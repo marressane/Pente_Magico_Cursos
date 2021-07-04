@@ -207,7 +207,7 @@ require_once("modal-login.php");
                 </li>
                 <!-- start single gallery image -->
 
-                <li class="col-md-4 col-sm-6 col-xs-12 mix Penteados">
+                <li class="col-md-4 col-sm-6 col-xs-12 mix mani-pedi">
                   <div class="mu-single-gallery">  
 
                     <div class="mu-single-gallery-item">
@@ -219,9 +219,9 @@ require_once("modal-login.php");
                       <div class="mu-single-gallery-info">
 
                         <div class="mu-single-gallery-info-inner">
-                          <h4>Maquilhagem</h4>
-                          <p>MAquilhagem turma 2020 </p>
-                          <a href="assets/img/gallery/big/3.jpg" data-fancybox-group="gallery" class="fancybox"><span class="fa fa-eye"></span></a>
+                          <h4>Manicure & Pedicure</h4>
+                          <p>Manicure/pedicure turma 2019 </p>
+                          <a href="assets/img/gallery/big/2.jpg" data-fancybox-group="gallery" class="fancybox"><span class="fa fa-eye"></span></a>
                           <a href="#" class="aa-link"><span class="fa fa-link"></span></a>
                         </div>
                         
@@ -231,7 +231,7 @@ require_once("modal-login.php");
                   </div>
                 </li>
  <!-- start single gallery image -->
-               <li class="col-md-4 col-sm-6 col-xs-12 mix maquilhagem">
+               <li class="col-md-4 col-sm-6 col-xs-12 mix tratamento facial">
                   <div class="mu-single-gallery">                  
                     <div class="mu-single-gallery-item">
                       <div class="mu-single-gallery-img">
@@ -249,35 +249,17 @@ require_once("modal-login.php");
                   </div>
                </li>
                 <!-- start single gallery image -->
-                <li class="col-md-4 col-sm-6 col-xs-12 mix facial">
-                  <div class="mu-single-gallery">                  
-                    <div class="mu-single-gallery-item">
-                      <div class="mu-single-gallery-img">
-                        <a href="#"><img alt="img" src="assets/img/gallery/small/6.jpg"></a>
-                      </div>
-                      <div class="mu-single-gallery-info">
-                        <div class="mu-single-gallery-info-inner">
-                          <h4>Image Title</h4>
-                          <p>descripction</p>
-                          <a href="assets/img/gallery/big/6.jpg" data-fancybox-group="gallery" class="fancybox"><span class="fa fa-eye"></span></a>
-                          <a href="#" class="aa-link"><span class="fa fa-link"></span></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <!-- start single gallery image -->
-                <li class="col-md-4 col-sm-6 col-xs-12 mix pentaados">
+                <li class="col-md-4 col-sm-6 col-xs-12 mix penteados">
                   <div class="mu-single-gallery">                  
                     <div class="mu-single-gallery-item">
                       <div class="mu-single-gallery-img">
                         <a href="#"><img alt="img" src="assets/img/gallery/small/7.jpg"></a>
                       </div>
-                       <div class="mu-single-gallery-info">
+                      <div class="mu-single-gallery-info">
                         <div class="mu-single-gallery-info-inner">
-                          <h4>Image Title</h4>
-                          <p>decripction</p>
-                          <a href="assets/img/gallery/big/7.jpg" data-fancybox-group="gallery" class="fancybox"><span class="fa fa-eye"></span></a>
+                          <h4>Penteados</h4>
+                          <p>Penteados turma 2020</p>
+                          <a href="assets/img/gallery/big/5.jpg" data-fancybox-group="gallery" class="fancybox"><span class="fa fa-eye"></span></a>
                           <a href="#" class="aa-link"><span class="fa fa-link"></span></a>
                         </div>
                       </div>
@@ -285,17 +267,17 @@ require_once("modal-login.php");
                   </div>
                 </li>
                 <!-- start single gallery image -->
-                <li class="col-md-4 col-sm-6 col-xs-12 mix dreadlocks">
+                <li class="col-md-4 col-sm-6 col-xs-12 mix maquilhagem">
                   <div class="mu-single-gallery">                  
                     <div class="mu-single-gallery-item">
                       <div class="mu-single-gallery-img">
-                        <a href="#"><img alt="img" src="assets/img/gallery/small/2.jpg"></a>
+                        <a href="#"><img alt="img" src="assets/img/gallery/small/1.jpg"></a>
                       </div>
-                      <div class="mu-single-gallery-info">
+                       <div class="mu-single-gallery-info">
                         <div class="mu-single-gallery-info-inner">
-                          <h4>Image Title</h4>
-                          <p>decripction</p>
-                          <a href="assets/img/gallery/big/6.jpg" data-fancybox-group="gallery" class="fancybox"><span class="fa fa-eye"></span></a>
+                          <h4>Maquilhagem</h4>
+                          <p>Maquilhagem turma 2018</p>
+                          <a href="assets/img/gallery/big/1.jpg" data-fancybox-group="gallery" class="fancybox"><span class="fa fa-eye"></span></a>
                           <a href="#" class="aa-link"><span class="fa fa-link"></span></a>
                         </div>
                       </div>
@@ -309,11 +291,11 @@ require_once("modal-login.php");
                       <div class="mu-single-gallery-img">
                         <a href="#"><img alt="img" src="assets/img/gallery/small/6.jpg"></a>
                       </div>
-                       <div class="mu-single-gallery-info">
+                      <div class="mu-single-gallery-info">
                         <div class="mu-single-gallery-info-inner">
-                          <h4>Image Title</h4>
-                          <p>decripction</p>
-                          <a href="assets/img/gallery/big/6.jpg" data-fancybox-group="gallery" class="fancybox"><span class="fa fa-eye"></span></a>
+                          <h4>Penteados</h4>
+                          <p>Penteados turma 2017</p>
+                          <a href="assets/img/gallery/big/7.jpg" data-fancybox-group="gallery" class="fancybox"><span class="fa fa-eye"></span></a>
                           <a href="#" class="aa-link"><span class="fa fa-link"></span></a>
                         </div>
                       </div>
@@ -325,31 +307,13 @@ require_once("modal-login.php");
                   <div class="mu-single-gallery">                  
                     <div class="mu-single-gallery-item">
                       <div class="mu-single-gallery-img">
-                        <a href="#"><img alt="img" src="assets/img/gallery/small/7.jpg"></a>
-                      </div>
-                      <div class="mu-single-gallery-info">
-                        <div class="mu-single-gallery-info-inner">
-                          <h4>Image Title</h4>
-                          <p>decripction</p>
-                          <a href="assets/img/gallery/big/7.jpg" data-fancybox-group="gallery" class="fancybox"><span class="fa fa-eye"></span></a>
-                          <a href="#" class="aa-link"><span class="fa fa-link"></span></a>
-                        </div>
-                      </div>             
-                    </div>
-                  </div> 
-                </li>
-                 <!-- start single gallery image -->
-                <li class="col-md-4 col-sm-6 col-xs-12 mix drealocks">
-                  <div class="mu-single-gallery">                  
-                    <div class="mu-single-gallery-item">
-                      <div class="mu-single-gallery-img">
-                        <a href="#"><img alt="img" src="assets/img/gallery/small/8.jpg"></a>
+                        <a href="#"><img alt="img" src="assets/img/gallery/small/12.jpg"></a>
                       </div>
                        <div class="mu-single-gallery-info">
                         <div class="mu-single-gallery-info-inner">
-                          <h4>Image Title</h4>
-                          <p>decripction</p>
-                          <a href="assets/img/gallery/big/8.jpg" data-fancybox-group="gallery" class="fancybox"><span class="fa fa-eye"></span></a>
+                          <h4>Trancas Afro</h4>
+                          <p>Trancas Turma 2019</p>
+                          <a href="assets/img/gallery/big/12.jpg" data-fancybox-group="gallery" class="fancybox"><span class="fa fa-eye"></span></a>
                           <a href="#" class="aa-link"><span class="fa fa-link"></span></a>
                         </div>
                       </div>
@@ -357,17 +321,89 @@ require_once("modal-login.php");
                   </div>
                 </li>
                 <!-- start single gallery image -->
-                <li class="col-md-4 col-sm-6 col-xs-12 mix mani-pedi">
+                <li class="col-md-4 col-sm-6 col-xs-12 mix dreadlocks">
                   <div class="mu-single-gallery">                  
                     <div class="mu-single-gallery-item">
                       <div class="mu-single-gallery-img">
-                        <a href="#"><img alt="img" src="assets/img/gallery/small/9.jpg"></a>
+                        <a href="#"><img alt="img" src="assets/img/gallery/small/10.jpg"></a>
                       </div>
                       <div class="mu-single-gallery-info">
                         <div class="mu-single-gallery-info-inner">
-                          <h4>Image Title</h4>
-                          <p>decripction</p>
-                          <a href="assets/img/gallery/big/9.jpg" data-fancybox-group="gallery" class="fancybox"><span class="fa fa-eye"></span></a>
+                          <h4>Dreadlocks</h4>
+                          <p>Dreadlocks Turma 2018</p>
+                          <a href="assets/img/gallery/big/10.jpg" data-fancybox-group="gallery" class="fancybox"><span class="fa fa-eye"></span></a>
+                          <a href="#" class="aa-link"><span class="fa fa-link"></span></a>
+                        </div>
+                      </div>             
+                    </div>
+                  </div> 
+                </li>
+                 <!-- start single gallery image -->
+                <li class="col-md-4 col-sm-6 col-xs-12 mix tratamento facial">
+                  <div class="mu-single-gallery">                  
+                    <div class="mu-single-gallery-item">
+                      <div class="mu-single-gallery-img">
+                        <a href="#"><img alt="img" src="assets/img/gallery/small/14.jpg"></a>
+                      </div>
+                       <div class="mu-single-gallery-info">
+                        <div class="mu-single-gallery-info-inner">
+                          <h4>Tratamento Facial</h4>
+                          <p>Tratamento Facial turma 2020</p>
+                          <a href="assets/img/gallery/big/14.jpg" data-fancybox-group="gallery" class="fancybox"><span class="fa fa-eye"></span></a>
+                          <a href="#" class="aa-link"><span class="fa fa-link"></span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                 <!-- start single gallery image -->
+                 <li class="col-md-4 col-sm-6 col-xs-12 mix trancas-afro">
+                  <div class="mu-single-gallery">                  
+                    <div class="mu-single-gallery-item">
+                      <div class="mu-single-gallery-img">
+                        <a href="#"><img alt="img" src="assets/img/gallery/small/11.jpg"></a>
+                      </div>
+                       <div class="mu-single-gallery-info">
+                        <div class="mu-single-gallery-info-inner">
+                          <h4>Trancas Afro</h4>
+                          <p>Trancas Turma 2017</p>
+                          <a href="assets/img/gallery/big/11.jpg" data-fancybox-group="gallery" class="fancybox"><span class="fa fa-eye"></span></a>
+                          <a href="#" class="aa-link"><span class="fa fa-link"></span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                 <!-- start single gallery image -->
+                 <li class="col-md-4 col-sm-6 col-xs-12 mix trancas-afro">
+                  <div class="mu-single-gallery">                  
+                    <div class="mu-single-gallery-item">
+                      <div class="mu-single-gallery-img">
+                        <a href="#"><img alt="img" src="assets/img/gallery/small/12.jpg"></a>
+                      </div>
+                       <div class="mu-single-gallery-info">
+                        <div class="mu-single-gallery-info-inner">
+                          <h4>Trancas Afro</h4>
+                          <p>Trancas Turma 2017</p>
+                          <a href="assets/img/gallery/big/12.jpg" data-fancybox-group="gallery" class="fancybox"><span class="fa fa-eye"></span></a>
+                          <a href="#" class="aa-link"><span class="fa fa-link"></span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!-- start single gallery image -->
+                <li class="col-md-4 col-sm-6 col-xs-12 mix facial">
+                  <div class="mu-single-gallery">                  
+                    <div class="mu-single-gallery-item">
+                      <div class="mu-single-gallery-img">
+                        <a href="#"><img alt="img" src="assets/img/gallery/small/13.jpg"></a>
+                      </div>
+                      <div class="mu-single-gallery-info">
+                        <div class="mu-single-gallery-info-inner">
+                          <h4>Tratamento Facial</h4>
+                          <p>Tratamento Facial Turma 2018</p>
+                          <a href="assets/img/gallery/big/13.jpg" data-fancybox-group="gallery" class="fancybox"><span class="fa fa-eye"></span></a>
                           <a href="#" class="aa-link"><span class="fa fa-link"></span></a>
                         </div>
                       </div>             
@@ -408,11 +444,11 @@ require_once("modal-login.php");
               <div class="mu-footer-widget">
               <h4>Cursos</h4>
                 <ul>
-                <li><a href="#">Curso 1</a></li>
-                  <li><a href="">Curso 1</a></li>
-                  <li><a href="">Curso 1</a></li>
-                  <li><a href="">Curso 1</a></li>
-                  <li><a href="">Curso 1</a></li>                 
+                <li><a href="#">Penteados</a></li>
+                  <li><a href="">Maquilhagem</a></li>
+                  <li><a href="">Manicure e Pedicure</a></li>
+                  <li><a href="">Tratamento Facial</a></li>
+                  <li><a href="">Tratamento Facial</a></li>                 
                 </ul>
               </div>
             </div>
